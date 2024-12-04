@@ -4,6 +4,7 @@
 
 
 /**
+ * copyright 2024 Tobias Klumpp
  * copyright 2022 @codewithsadee
  */
 
@@ -333,6 +334,10 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
+  border-radius: 20px;
+}
+
+.portrait-image {
   border-radius: 20px;
 }
 
