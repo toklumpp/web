@@ -1889,3 +1889,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 .service-icon {
   color: var(--orange-yellow-crayola);
 }
+
+.timeline-link {
+  color: var(--light-gray);
+}
