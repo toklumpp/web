@@ -1,0 +1,5 @@
+.gitconfig
+.bash_history
+.ssh/
+.viminfo
+logs/
