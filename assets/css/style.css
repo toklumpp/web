@@ -4,7 +4,7 @@
 
 
 /**
- * copyright 2024 Tobias Klumpp <tobias.klumpp@toklumpp.net>
+ * copyright 2024-2025 Tobias Klumpp <tobias.klumpp@toklumpp.net>
  * copyright 2022 @codewithsadee
  */
 
@@ -1888,4 +1888,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .service-icon {
   color: var(--orange-yellow-crayola);
+}
+
+.timeline-link {
+  color: var(--light-gray);
 }
