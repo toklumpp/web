@@ -506,11 +506,16 @@ main {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
+}
+
+.about-text p {
+  margin-bottom: 15px; 
   line-height: 1.6;
 }
 
-.about-text p { margin-bottom: 15px; }
-
+.about-title {
+  margin-bottom: 20px;
+}
 
 
 /**
