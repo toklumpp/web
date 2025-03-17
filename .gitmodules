@@ -1,0 +1,3 @@
+[submodule "modules/ionicons"]
+	path = modules/ionicons
+	url = git@github.com:ionic-team/ionicons.git
