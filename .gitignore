@@ -3,3 +3,7 @@
 .ssh/
 .viminfo
 logs/
+
+# Synology NAS
+"#snapshot/
+@eaDir/
