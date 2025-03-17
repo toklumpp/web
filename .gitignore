@@ -4,6 +4,5 @@
 .viminfo
 logs/
 
-# Synology NAS
-"#snapshot"/
+\#snapshot/
 @eaDir/
