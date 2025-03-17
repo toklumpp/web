@@ -1,8 +1,12 @@
+# Linux
 .gitconfig
 .bash_history
 .ssh/
 .viminfo
+
+# Webspace
 logs/
 
+# Synology NAS
 \#snapshot/
 @eaDir/
