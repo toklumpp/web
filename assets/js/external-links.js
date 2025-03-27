@@ -2,8 +2,9 @@
 
 // Function to check if a link is external
 function isExternal(link) {
+    const url = new URL(link.href);
     const origin = window.location.origin;
-    return link.origin !== origin;
+    return (link.origin !== origin) && (url.protocol !== 'mailto:');
 }
 
 // Function to make external links open in a new tab
