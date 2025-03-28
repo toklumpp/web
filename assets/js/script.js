@@ -1,3 +1,6 @@
+// Copyright (c) 2024-2025 Tobias Klumpp <tobias.klumpp@toklumpp.net>
+// Copyright (c) 2022 codewithsadee
+// SPDX-License-Identifier: MIT
 'use strict';
 
 

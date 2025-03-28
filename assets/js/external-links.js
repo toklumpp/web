@@ -1,3 +1,5 @@
+// Copyright (c) 2025 Tobias Klumpp <tobias.klumpp@toklumpp.net>
+// SPDX-License-Identifier: MIT
 'use strict';
 
 // Function to check if a link is external
