@@ -17,6 +17,14 @@ function makeExternalLinksOpenInNewTab() {
     links.forEach(link => {
         if (isExternal(link)) {
             link.setAttribute('target', '_blank');
+            const rel = link.getAttribute('rel');
+            if (rel) {
+                if (!rel.includes('noopener')) {
+                    link.setAttribute('rel', `${rel} noopener`);
+                }
+            } else {
+                link.setAttribute('rel', 'noopener');
+            }
         }
     });
 }
