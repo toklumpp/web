@@ -1894,3 +1894,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 .timeline-link {
   color: var(--light-gray);
 }
+address {
+  display: inline;
+}
+.p-locality {
+  display: inline;
+}
+.p-country-name {
+  display: inline;
+}
