@@ -36,6 +36,7 @@ function replaceGeoUrl(match, latitude, longitude, zoom, platform) {
             if (zoom) {
                 url += `?z=${zoom}`;
             }
+            break;
         case 'windows':
             // Use the bingmaps: URL scheme for Windows Maps app
             url = `bingmaps:?cp=${latitude}~${longitude}`;
