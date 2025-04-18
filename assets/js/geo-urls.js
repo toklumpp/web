@@ -47,6 +47,7 @@ function replaceGeoUrl(match, latitude, longitude, zoom, platform) {
             }
             break;
         case "Chrome OS":
+        case "Chromium OS":
             // Use the googlechrome: URL scheme for Chrome OS
             url = `googlechrome://maps/?q=${latitude},${longitude}`;
             if (zoom) {
