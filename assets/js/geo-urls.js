@@ -9,19 +9,21 @@ const geoUrlPattern = /geo:([\-0-9.]+),([\-0-9.]+)(\?(z=([0-9]+))?)?/;
 function detectPlatform() {
     const userAgent = navigator.userAgent;
     if (userAgent.match(/Android/i)) {
-        return 'android';
+        return "Android";
     } else if (userAgent.match(/CrOS/i)) {
-        return 'chromeos';
+        return "Chrome OS";
+    } else if (false) {
+        return "Chromium OS";
     } else if (userAgent.match(/Linux/i)) {
-        return 'linux';
+        return "Linux";
     } else if (userAgent.match(/iPhone|iPad|iPod/i)) {
-        return 'ios';
+        return "iOS";
     } else if (userAgent.match(/Mac OS X/i)) {
-        return 'mac';
+        return "macOS";
     } else if (userAgent.match(/Windows/i)) {
-        return 'windows';
+        return "Windows";
     } else {
-        return 'unknown';
+        return "Unknown";
     }
 }
 
@@ -29,22 +31,22 @@ function detectPlatform() {
 function replaceGeoUrl(match, latitude, longitude, zoom, platform) {
     let url = match;
     switch (platform) {
-        case 'ios':
-        case 'mac':
+        case "iOS":
+        case "macOS":
             // Use the maps: URL scheme for Apple devices
             url = `maps:${latitude},${longitude}`;
             if (zoom) {
                 url += `?z=${zoom}`;
             }
             break;
-        case 'windows':
+        case "Windows":
             // Use the bingmaps: URL scheme for Windows Maps app
             url = `bingmaps:?cp=${latitude}~${longitude}`;
             if (zoom) {
                 url += `&z=${zoom}`;
             }
             break;
-        case 'chromeos':
+        case "Chrome OS":
             // Use the googlechrome: URL scheme for Chrome OS
             url = `googlechrome://maps/?q=${latitude},${longitude}`;
             if (zoom) {
