@@ -3,23 +3,23 @@ Copyright (c) 2025 Tobias Klumpp <tobias.klumpp@toklumpp.net>
 SPDX-License-Identifier: MIT
 */
 // Regular expression pattern to match geo: URLs
-const geoUrlPattern = /geo:([\-0-9.]+),([\-0-9.]+)(?:,([0-9]+))?/;
+const geoUrlPattern = /geo:([\-0-9.]+),([\-0-9.]+)(\?(z=([0-9]+))?)?/;
 
 // Function to detect the platform
 function detectPlatform() {
     const userAgent = navigator.userAgent;
     if (userAgent.match(/Android/i)) {
         return 'android';
-    } else if (userAgent.match(/iPhone|iPad|iPod/i)) {
-        return 'ios';
-    } else if (userAgent.match(/Windows/i)) {
-        return 'windows';
-    } else if (userAgent.match(/Mac OS X/i)) {
-        return 'mac';
     } else if (userAgent.match(/CrOS/i)) {
         return 'chromeos';
     } else if (userAgent.match(/Linux/i)) {
         return 'linux';
+    } else if (userAgent.match(/iPhone|iPad|iPod/i)) {
+        return 'ios';
+    } else if (userAgent.match(/Mac OS X/i)) {
+        return 'mac';
+    } else if (userAgent.match(/Windows/i)) {
+        return 'windows';
     } else {
         return 'unknown';
     }
@@ -72,7 +72,7 @@ links.forEach(link => {
     if (match) {
         const latitude = match[1];
         const longitude = match[2];
-        const zoom = match[3];
+        const zoom = match[5];
         const newUrl = replaceGeoUrl(link.href, latitude, longitude, zoom, platform);
         link.href = newUrl;
     }
