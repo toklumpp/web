@@ -2,6 +2,7 @@
 Copyright (c) 2025 Tobias Klumpp <tobias.klumpp@toklumpp.net>
 SPDX-License-Identifier: MIT
 */
+'use strict';
 // Regular expression pattern to match geo: URLs
 const geoUrlPattern = /geo:([\-0-9.]+),([\-0-9.]+)(\?(z=([0-9]+))?)?/;
 
