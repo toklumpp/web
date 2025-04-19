@@ -34,9 +34,9 @@ function replaceGeoUrl(match, latitude, longitude, zoom, platform) {
         case "iOS":
         case "macOS":
             // Use the maps: URL scheme for Apple devices
-            url = `maps:${latitude},${longitude}`;
+            url = `maps://?ll=${latitude},${longitude}`;
             if (zoom) {
-                url += `?z=${zoom}`;
+                url += `&z=${zoom}`;
             }
             break;
         case "Windows":
@@ -73,10 +73,6 @@ const links = document.querySelectorAll('a[href^="geo:"]');
 links.forEach(link => {
     const match = link.href.match(geoUrlPattern);
     if (match) {
-        const latitude = match[1];
-        const longitude = match[2];
-        const zoom = match[5];
-        const newUrl = replaceGeoUrl(link.href, latitude, longitude, zoom, platform);
-        link.href = newUrl;
+        link.href = replaceGeoUrl(link.href, match[1], match[2], match[5], platform);
     }
 });
