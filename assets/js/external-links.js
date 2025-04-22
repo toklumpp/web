@@ -8,7 +8,9 @@ SPDX-License-Identifier: MIT
 function isExternal(link) {
     const url = new URL(link.href);
     const origin = window.location.origin;
-    return (link.origin !== origin) && (url.protocol !== 'mailto:');
+    return (link.origin !== origin) && (url.protocol !== 'mailto:')
+        && (url.protocol !== 'geo:') && (url.protocol !== 'maps:')
+        && (url.protocol !== 'bingmaps:');
 }
 
 // Function to make external links open in a new tab
