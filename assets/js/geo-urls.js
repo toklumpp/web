@@ -64,16 +64,19 @@ function replaceGeoUrl(match, latitude, longitude, zoom, platform) {
     return url;
 }
 
-// Detect the platform
-const platform = detectPlatform();
+function makeGeoURLsCrossplatform() {
+    // Detect the platform
+    const platform = detectPlatform();
 
-// Get all links with geo: URLs
-const links = document.querySelectorAll('a[href^="geo:"]');
+    // Get all links with geo: URLs
+    const links = document.querySelectorAll('a[href^="geo:"]');
 
-// Replace the href attribute of each link
-links.forEach(link => {
-    const match = link.href.match(geoUrlPattern);
-    if (match) {
-        link.href = replaceGeoUrl(link.href, match[1], match[2], match[5], platform);
-    }
-});
+    // Replace the href attribute of each link
+    links.forEach(link => {
+        const match = link.href.match(geoUrlPattern);
+        if (match) {
+            link.href = replaceGeoUrl(link.href, match[1], match[2], match[5], platform);
+        }
+    });
+}
+document.addEventListener('DOMContentLoaded', makeGeoURLsCrossplatform);
