@@ -5,56 +5,56 @@ SPDX-License-Identifier: MIT
 
 :root {
     --bg-gradient-onyx: linear-gradient(to bottom right,
-            lch(26.68% 0.66 290.35) 3%,
-            lch(19.87% 0 296.81) 97%);
+            lch(70% 0.66 290.35) 3%,
+            lch(80% 0 296.81) 97%);
     --bg-gradient-jet: linear-gradient(to bottom right,
-            lch(18.51% 0.69 290.38 / 0.251) 0%,
-            lch(9.84% 1.48 290.68 / 0) 100%), hsl(240, 2%, 13%);
+            lch(80% 0.69 290.38 / 0.251) 0%,
+            lch(90% 1.48 290.68 / 0) 100%), hsl(240, 2%, 13%);
     --bg-gradient-yellow-1: linear-gradient(to bottom right,
-            lch(88.19% 58.39 89.81) 0%,
-            lch(81.74% 57.12 76.94 / 0) 50%);
+            lch(10% 58.39 89.81) 0%,
+            lch(20% 57.12 76.94 / 0) 50%);
     --bg-gradient-yellow-2: linear-gradient(135deg,
-            lch(88.19% 58.39 89.81 / 0.251) 0%,
-            lch(80.5% 58.57 74.96 / 0) 59.86%), hsl(240, 2%, 13%);
+            lch(10% 58.39 89.81 / 0.251) 0%,
+            lch(20% 58.57 74.96 / 0) 59.86%), hsl(240, 2%, 13%);
     --border-gradient-onyx: linear-gradient(to bottom right,
-            lch(27.09% 0 296.81) 0%,
-            lch(27.09% 0 296.81 / 0) 50%);
+            lch(70% 0 296.81) 0%,
+            lch(70% 0 296.81 / 0) 50%);
     --text-gradient-yellow: linear-gradient(to right,
-            lch(88.49% 56.44 89.95),
-            lch(80.5% 58.57 74.96));
-    --jet: lch(23.52% 0 296.81);
-    --onyx: lch(17.57% 0.7 290.39);
-    --onyx-transparent: lch(17.57% 0.7 290.39 / 0.75);
-    --eerie-black-1: lch(12.32% 1.45 290.63);
-    --eerie-black-2: lch(11.3% 0.73 290.43);
-    --smoky-black: lch(5.46% 0 296.81);
-    --white-1: lch(100% 0.01 296.81);
-    --white-2: lch(98.27% 0.01 296.81);
-    --orange-yellow-crayola: lch(88.49% 56.44 89.95);
-    --vegas-gold: lch(73.09% 47.74 90.14);
-    --light-gray: lch(85.63% 0.01 296.81);
-    --light-gray-70: lch(85.63% 0.01 296.81 / 0.7);
-    --bittersweet-shimmer: lch(46.82% 49.11 27.02);
-    --shadow-1: -4px 8px 24px lch(0% 0 0 / 0.25);
-    --shadow-2: 0 16px 30px lch(0% 0 0 / 0.25);
-    --shadow-3: 0 16px 40px lch(0% 0 0 / 0.25);
-    --shadow-4: 0 25px 50px lch(0% 0 0 / 0.15);
-    --shadow-5: 0 24px 80px lch(0% 0 0 / 0.25);
-    --transparent: lch(100% 0.01 296.81 / 0.1);
-    --almost-transparent: lch(100% 0.01 296.81 / 0.15);
-    --box-shadow-transparent: lch(100% 0.01 296.81 / 0.11);
-    --almost-black: lch(3.64% 0 296.81);
-    --half-transparent: lch(0% 0 0 / 0.5);
+            lch(10% 56.44 89.95),
+            lch(20% 58.57 74.96));
+    --jet: lch(80% 0 296.81);
+    --onyx: lch(80% 0.7 290.39);
+    --onyx-transparent: lch(80% 0.7 290.39 / 0.75);
+    --eerie-black-1: lch(90% 1.45 290.63);
+    --eerie-black-2: lch(90% 0.73 290.43);
+    --smoky-black: lch(90% 0 296.81);
+    --white-1: lch(0% 0.01 296.81);
+    --white-2: lch(0% 0.01 296.81);
+    --orange-yellow-crayola: lch(10% 56.44 89.95);
+    --vegas-gold: lch(30% 47.74 90.14);
+    --light-gray: lch(10% 0.01 296.81);
+    --light-gray-70: lch(10% 0.01 296.81 / 0.7);
+    --bittersweet-shimmer: lch(50% 49.11 27.02);
+    --shadow-1: -4px 8px 24px lch(100% 0 0 / 0.25);
+    --shadow-2: 0 16px 30px lch(100% 0 0 / 0.25);
+    --shadow-3: 0 16px 40px lch(100% 0 0 / 0.25);
+    --shadow-4: 0 25px 50px lch(100% 0 0 / 0.15);
+    --shadow-5: 0 24px 80px lch(100% 0 0 / 0.25);
+    --transparent: lch(0% 0.01 296.81 / 0.1);
+    --almost-transparent: lch(0% 0.01 296.81 / 0.15);
+    --box-shadow-transparent: lch(0% 0.01 296.81 / 0.11);
+    --almost-black: lch(100% 0 296.81);
+    --half-transparent: lch(100% 0 0 / 0.5);
 }
 
 .select-item button:hover {
-    --eerie-black-2: lch(20.86% 1.36 290.51);
+    --eerie-black-2: lch(80% 1.36 290.51);
 }
 
 @media (min-width: 1024px) {
     :root {
-        --shadow-1: -4px 8px 24px lch(0% 0 0 / 0.125);
-        --shadow-2: 0 16px 30px lch(0% 0 0 / 0.125);
-        --shadow-3: 0 16px 40px lch(0% 0 0 / 0.125);
+        --shadow-1: -4px 8px 24px lch(100% 0 0 / 0.125);
+        --shadow-2: 0 16px 30px lch(100% 0 0 / 0.125);
+        --shadow-3: 0 16px 40px lch(100% 0 0 / 0.125);
     }
 }
