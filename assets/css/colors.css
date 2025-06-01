@@ -27,7 +27,7 @@ SPDX-License-Identifier: MIT
     --onyx-transparent: lch(80% 0.7 290.39 / 0.75);
     --eerie-black-1: lch(90% 1.45 290.63);
     --eerie-black-2: lch(90% 0.73 290.43);
-    --smoky-black: lch(90% 0 296.81);
+    --smoky-black: hsl(0, 0%, 97%);
     --white-1: lch(0% 0.01 296.81);
     --white-2: lch(0% 0.01 296.81);
     --orange-yellow-crayola: lch(10% 56.44 89.95);
