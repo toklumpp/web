@@ -194,6 +194,11 @@ article {
   z-index: 1;
 }
 
+.icon-box svg {
+  stroke: var(--orange-yellow-crayola);
+
+}
+
 .icon-box::before {
   content: "";
   position: absolute;
