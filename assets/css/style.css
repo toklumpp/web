@@ -1458,8 +1458,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .modal-img-wrapper {
     display: flex;
-    flex-direction: column;
     -ms-flex-direction: column;
+    flex-direction: column;
     align-items: center;
   }
 
@@ -1839,8 +1839,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
     .sidebar-info {
-      flex-direction: column;
       -ms-flex-direction: column;
+      flex-direction: column;
     }
   .avatar-box img { width: 150px; }
 
