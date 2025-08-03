@@ -792,7 +792,7 @@ main {
 .timeline-item { position: relative; }
 
 .timeline-item:not(:last-child) { margin-bottom: 20px; }
-.timeline-subitem:not(:last-child) { margin-bottom: 20px; }
+.timeline-subitem:not(:last-child) { margin-bottom: 7px; }
 
 
 .timeline-item-title {
