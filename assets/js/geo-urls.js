@@ -56,7 +56,7 @@ function replaceGeoUrl(match, latitude, longitude, zoom, platform) {
     return url;
 }
 
-function makeGeoURLsCrossplatform() {
+export default function() {
     // Detect the platform
     const platform = detectPlatform();
 
@@ -71,4 +71,3 @@ function makeGeoURLsCrossplatform() {
         }
     });
 }
-document.addEventListener('DOMContentLoaded', makeGeoURLsCrossplatform);

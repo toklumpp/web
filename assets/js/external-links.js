@@ -14,7 +14,7 @@ function isExternal(link) {
 }
 
 // Function to make external links open in a new tab
-function makeExternalLinksOpenInNewTab() {
+export default function() {
     const links = document.querySelectorAll('a');
     links.forEach(link => {
         if (isExternal(link)) {
@@ -31,5 +31,3 @@ function makeExternalLinksOpenInNewTab() {
     });
 }
 
-// Call the function on page load
-document.addEventListener('DOMContentLoaded', makeExternalLinksOpenInNewTab);
