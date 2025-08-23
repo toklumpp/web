@@ -3,37 +3,44 @@ Copyright (c) 2025 Tobias Klumpp <tobias.klumpp@toklumpp.net>
 SPDX-License-Identifier: MIT
 */
 :root {
+        --blue: oklch(48.245% 0.08047 265.192);
+        --white: oklch(100% 0.00011 271.152);
+        --white-smoke: oklch(96.416% 0.00011 271.152);
         --bg-gradient-onyx: linear-gradient(to bottom right,
-                        lch(30% 0.66 290.35) 3%,
-                        lch(20% 0 296.81) 97%);
+                        oklch(36.804% 0.00011 271.152) 3%,
+                        oklch(30.919% 0.00011 271.152) 97%);
         --bg-gradient-jet: linear-gradient(to bottom right,
-                        lch(20% 0.69 290.38 / 0.251) 0%,
-                        lch(10% 1.48 290.68 / 0) 100%), lch(10% 1.45 290.63);
+                        oklch(29.754% 0.00011 271.152 / 0.251) 0%,
+                        oklch(22.296%0.00011 271.152 / 0) 100%), oklch(24.435% 0.00011 271.152);
         --bg-gradient-yellow-1: linear-gradient(to bottom right,
-                        lch(90% 58.39 89.81) 0%,
-                        lch(80% 57.12 76.94 / 0) 50%);
+                        oklch(80% 0.08047 265.192) 0%,
+                        oklch(75% 0.08047 265.192 / 0) 50%);
         --bg-gradient-yellow-2: linear-gradient(135deg,
-                        lch(90% 58.39 89.81 / 0.251) 0%,
-                        lch(80% 58.57 74.96 / 0) 59.86%), lch(10% 1.45 290.63);
+                        oklch(80% 0.08047 265.192 / 0.251) 0%,
+                        oklch(75% 0.08047 265.192 / 0) 59.86%), oklch(37.15% 0.00011 271.152);
         --border-gradient-onyx: linear-gradient(to bottom right,
-                        lch(30% 0 296.81) 0%,
-                        lch(30% 0 296.81 / 0) 50%);
+                        oklch(37.15% 0.00011 271.152) 0%,
+                        oklch(37.15% 0.00011 271.152 / 0) 50%);
         --text-gradient-yellow: linear-gradient(to right,
-                        lch(90% 56.44 89.95),
-                        lch(80% 58.57 74.96));
-        --jet: lch(20% 0 296.81);
-        --onyx: lch(20% 0.7 290.39);
+                        oklch(80% 0.08047 265.192),
+                        oklch(70% 0.08047 265.192));
+        --jet: oklch(34.07% 0.00011 271.152);
+        --onyx: oklch(28.946% 0.00011 271.152);
         --onyx-transparent: lch(20% 0.7 290.39 / 0.75);
-        --eerie-black-1: lch(10% 1.45 290.63);
-        --eerie-black-2: lch(10% 0.73 290.43);
-        --smoky-black: lch(10% 0 296.81);
-        --white-1: lch(100% 0.01 296.81);
-        --white-2: lch(100% 0.01 296.81);
-        --orange-yellow-crayola: lch(90% 56.44 89.95);
-        --vegas-gold: lch(70% 47.74 90.14);
-        --light-gray: lch(90% 0.01 296.81);
-        --light-gray-70: lch(90% 0.01 296.81 / 0.7);
-        --bittersweet-shimmer: lch(50% 49.11 27.02);
+        --eerie-black-1: oklch(24.435% 0.00011 271.152);
+        --eerie-black-2: oklch(23.544% 0.00011 271.152);
+        --smoky-black: oklch(18.22% 0.00011 271.152);
+        --white-1: oklch(100% 0.00011 271.152);
+        --white-2: oklch(96.416% 0.00011 271.152);
+        --orange-yellow-crayola: oklch(90.092% 0.132 91.014);
+        --vegas-gold: oklch(76.808% 0.11182 91.198);
+        --link-color: oklch(65% 0.08047 265.192);
+        --focus-link-color: oklch(70% 0.08047 265.192);
+        --active-link-color: oklch(80% 0.08047 265.192);
+        --light-gray: oklch(85% 0.00011 271.152);
+        --dark-gray: oklch(60% 0.00011 271.152);
+        --light-gray-70: oklch(85% 0.00011 271.152 / 0.7);
+        --bittersweet-shimmer: oklch(55.836% 0.08047 355.192);
         --shadow-1: -4px 8px 24px lch(0% 0 0 / 0.25);
         --shadow-2: 0 16px 30px lch(0% 0 0 / 0.25);
         --shadow-3: 0 16px 40px lch(0% 0 0 / 0.25);
