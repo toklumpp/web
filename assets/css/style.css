@@ -59,9 +59,9 @@ SPDX-License-Identifier: MIT
   --orange-yellow-crayola: oklch(90.092% 0.132 91.014);
   --vegas-gold: oklch(76.808% 0.11182 91.198);
 
-  --link-color: oklch(75% 0.04819 267.12);
-  --focus-link-color: oklch(80% 0.04819 267.12);
-  --active-link-color: oklch(90% 0.04819 267.12);
+  --link-color: oklch(75% 0.08047 265.192);
+  --focus-link-color: oklch(80% 0.08047 265.192);
+  --active-link-color: oklch(90% 0.08047 265.192);
   --light-gray: hsl(0, 0%, 84%);
   --dark-gray: hsl(0, 0%, 50%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
