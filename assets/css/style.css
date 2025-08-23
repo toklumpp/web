@@ -18,14 +18,14 @@ SPDX-License-Identifier: MIT
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(240, 1%, 25%) 3%, 
-    hsl(0, 0%, 19%) 97%
+    oklch(36.804% 0.00173 285.959) 3%, 
+    oklch(30.919% 0.00004 271.152) 97%
   );
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
-    hsla(240, 1%, 18%, 0.251) 0%, 
-    hsla(240, 2%, 11%, 0) 100%
-  ), hsl(240, 2%, 13%);
+    oklch(29.754% 0.00182 286.018 / 0.251) 0%, 
+    oklch(22.296% 0.00387 285.993 / 0) 100%
+  ), oklch(24.435% 0.00378 286.016);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
     oklch(89.838% 0.0 91.055) 0%, 
@@ -33,13 +33,13 @@ SPDX-License-Identifier: MIT
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    hsla(45, 100%, 71%, 0.251) 0%, 
-    hsla(35, 100%, 68%, 0) 59.86%
-  ), hsl(240, 2%, 13%);
+    oklch(89.838% 0.13567 91.055 / 0.251) 0%, 
+    oklch(83.752% 0.13568 73.104 / 0) 59.86%
+  ), oklch(24.435% 0.00378 286.016);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(0, 0%, 25%) 0%, 
-    hsla(0, 0%, 25%, 0) 50%
+    oklch(37.15% 0.00004 271.152) 0%, 
+    oklch(37.15% 0.00004 271.152 / 0) 50%
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
@@ -49,23 +49,23 @@ SPDX-License-Identifier: MIT
 
   /* solid */
 
-  --jet: hsl(0, 0%, 22%);
-  --onyx: hsl(240, 1%, 17%);
-  --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 12%);
-  --smoky-black: hsl(0, 0%, 7%);
-  --white-1: hsl(0, 0%, 100%);
-  --white-2: hsl(0, 0%, 98%);
+  --jet: oklch(34.07% 0.00004 271.152);
+  --onyx: oklch(28.946% 0.00183 286.023);
+  --eerie-black-1: oklch(24.435% 0.00378 286.016);
+  --eerie-black-2: oklch(23.544% 0.00192 286.051);
+  --smoky-black: oklch(18.22% 0.00002 271.152);
+  --white-1: oklch(100% 0.00011 271.152);
+  --white-2: oklch(98.511% 0.00011 271.152);
   --orange-yellow-crayola: oklch(90.092% 0.132 91.014);
   --vegas-gold: oklch(76.808% 0.11182 91.198);
 
   --link-color: oklch(75% 0.08047 265.192);
   --focus-link-color: oklch(80% 0.08047 265.192);
   --active-link-color: oklch(90% 0.08047 265.192);
-  --light-gray: hsl(0, 0%, 84%);
-  --dark-gray: hsl(0, 0%, 50%);
-  --light-gray-70: hsla(0, 0%, 84%, 0.7);
-  --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --light-gray: oklch(87.61% 0.0001 271.152);
+  --dark-gray: oklch(59.987% 0.00007 271.152);
+  --light-gray-70: oklch(87.61% 0.0001 271.152 / 0.7);
+  --bittersweet-shimmer: oklch(55.836% 0.14061 22.729);
 
   /**
    * typography
