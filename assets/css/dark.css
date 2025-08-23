@@ -26,7 +26,7 @@ SPDX-License-Identifier: MIT
                         oklch(70% 0.08047 265.192));
         --jet: oklch(34.07% 0.00011 271.152);
         --onyx: oklch(28.946% 0.00011 271.152);
-        --onyx-transparent: lch(20% 0.7 290.39 / 0.75);
+        --onyx-transparent: oklch(28.946% 0.00011 271.152 / 0.75);
         --eerie-black-1: oklch(24.435% 0.00011 271.152);
         --eerie-black-2: oklch(23.544% 0.00011 271.152);
         --smoky-black: oklch(18.22% 0.00011 271.152);
@@ -41,26 +41,26 @@ SPDX-License-Identifier: MIT
         --dark-gray: oklch(60% 0.00011 271.152);
         --light-gray-70: oklch(85% 0.00011 271.152 / 0.7);
         --bittersweet-shimmer: oklch(55.836% 0.08047 355.192);
-        --shadow-1: -4px 8px 24px lch(0% 0 0 / 0.25);
-        --shadow-2: 0 16px 30px lch(0% 0 0 / 0.25);
-        --shadow-3: 0 16px 40px lch(0% 0 0 / 0.25);
-        --shadow-4: 0 25px 50px lch(0% 0 0 / 0.15);
-        --shadow-5: 0 24px 80px lch(0% 0 0 / 0.25);
-        --transparent: lch(100% 0.01 296.81 / 0.1);
-        --almost-transparent: lch(100% 0.01 296.81 / 0.15);
-        --box-shadow-transparent: lch(100% 0.01 296.81 / 0.11);
-        --almost-black: lch(0% 0 296.81);
-        --half-transparent: lch(0% 0 0 / 0.5);
+        --shadow-1: -4px 8px 24px oklch(0% 0.00011 271.152 / 0.25);
+        --shadow-2: 0 16px 30px oklch(0% 0.00011 271.152 / 0.25);
+        --shadow-3: 0 16px 40px oklch(0% 0.00011 271.152 / 0.25);
+        --shadow-4: 0 25px 50px oklch(0% 0.00011 271.152 / 0.15);
+        --shadow-5: 0 24px 80px oklch(0% 0.00011 271.152 / 0.25);
+        --transparent: oklch(100% 0.00011 271.152 / 0.1);
+        --almost-transparent: oklch(100% 0.00011 271.152 / 0.15);
+        --box-shadow-transparent: oklch(100% 0.00011 271.152 / 0.11);
+        --almost-black: oklch(0% 0.00011 271.152);
+        --half-transparent: oklch(0% 0.00011 271.152 / 0.5);
 }
 
 .select-item button:hover {
-        --eerie-black-2: lch(20% 1.36 290.51);
+        --eerie-black-2: oklch(30.995% 0.00011 271.152);
 }
 
 @media (min-width: 1024px) {
         :root {
-                --shadow-1: -4px 8px 24px lch(0% 0 0 / 0.125);
-                --shadow-2: 0 16px 30px lch(0% 0 0 / 0.125);
-                --shadow-3: 0 16px 40px lch(0% 0 0 / 0.125);
+                --shadow-1: -4px 8px 24px oklch(0% 0.00011 271.152 / 0.125);
+                --shadow-2: 0 16px 30px oklch(0% 0.00011 271.152 / 0.125);
+                --shadow-3: 0 16px 40px oklch(0% 0.00011 271.152 / 0.125);
         }
 }
