@@ -3,57 +3,62 @@ Copyright (c) 2025 Tobias Klumpp <tobias.klumpp@toklumpp.net>
 SPDX-License-Identifier: MIT
 */
 :root {
+        --blue: oklch(48.245% 0.08047 265.192);
+        --white: oklch(100% 0.00011 271.152);
+        --white-smoke: oklch(96.416% 0.00011 271.152);
         --bg-gradient-onyx: linear-gradient(to bottom right,
-                        lch(95% 0.66 290.35) 3%,
-                        lch(90% 0 296.81) 97%);
+                        oklch(36.804% 0.00011 271.152) 3%,
+                        oklch(30.919% 0.00011 271.152) 97%);
         --bg-gradient-jet: linear-gradient(to bottom right,
-                        lch(90% 0.69 290.38 / 0.251) 0%,
-                        lch(80% 1.48 290.68 / 0) 100%), lch(80% 1.45 290.63);
+                        oklch(29.754% 0.00011 271.152 / 0.251) 0%,
+                        oklch(22.296%0.00011 271.152 / 0) 100%), oklch(24.435% 0.00011 271.152);
         --bg-gradient-yellow-1: linear-gradient(to bottom right,
-                        lch(40% 58.39 89.81) 0%,
-                        lch(30% 57.12 76.94 / 0) 50%);
+                        oklch(80% 0.08047 265.192) 0%,
+                        oklch(75% 0.08047 265.192 / 0) 50%);
         --bg-gradient-yellow-2: linear-gradient(135deg,
-                        lch(40% 58.39 89.81 / 0.251) 0%,
-                        lch(30% 58.57 74.96 / 0) 59.86%), lch(80% 1.45 290.63);
+                        oklch(80% 0.08047 265.192 / 0.251) 0%,
+                        oklch(75% 0.08047 265.192 / 0) 59.86%), oklch(37.15% 0.00011 271.152);
         --border-gradient-onyx: linear-gradient(to bottom right,
-                        lch(95% 0 296.81) 0%,
-                        lch(95% 0 296.81 / 0) 50%);
+                        oklch(37.15% 0.00011 271.152) 0%,
+                        oklch(37.15% 0.00011 271.152 / 0) 50%);
         --text-gradient-yellow: linear-gradient(to right,
-                        lch(40% 56.44 89.95),
-                        lch(30% 58.57 74.96));
-        --jet: lch(80% 0 296.81);
-        --onyx: lch(80% 0.7 290.39);
-        --onyx-transparent: lch(80% 0.7 290.39 / 0.75);
-        --eerie-black-1: lch(90% 1.45 290.63);
-        --eerie-black-2: lch(90% 0.73 290.43);
-        --smoky-black: lch(90% 0 296.81);
-        --white-1: lch(100% 0.01 296.81);
-        --white-2: lch(100% 0.01 296.81);
-        --orange-yellow-crayola: lch(40% 56.44 89.95);
-        --vegas-gold: lch(60% 47.74 90.14);
-        --light-gray: lch(95% 0.01 296.81);
-        --light-gray-70: lch(95% 0.01 296.81 / 0.7);
-        --bittersweet-shimmer: lch(60% 49.11 27.02);
-        --shadow-1: -4px 8px 24px lch(100% 0 0 / 0.25);
-        --shadow-2: 0 16px 30px lch(100% 0 0 / 0.25);
-        --shadow-3: 0 16px 40px lch(100% 0 0 / 0.25);
-        --shadow-4: 0 25px 50px lch(100% 0 0 / 0.15);
-        --shadow-5: 0 24px 80px lch(100% 0 0 / 0.25);
-        --transparent: lch(0% 0.01 296.81 / 0.1);
-        --almost-transparent: lch(0% 0.01 296.81 / 0.15);
-        --box-shadow-transparent: lch(0% 0.01 296.81 / 0.11);
-        --almost-black: lch(90% 0 296.81);
-        --half-transparent: lch(100% 0 0 / 0.5);
+                        oklch(80% 0.08047 265.192),
+                        oklch(70% 0.08047 265.192));
+        --jet: oklch(96.416% 0.00011 271.152);
+        --onyx: oklch(96.416% 0.00011 271.152);
+        --onyx-transparent: oklch(96.416% 0.00011 271.152);
+        --eerie-black-1: oklch(96.416% 0.00011 271.152);
+        --eerie-black-2: oklch(96.416% 0.00011 271.152);
+        --smoky-black: oklch(96.416% 0.00011 271.152);
+        --white-1: oklch(0% 0.00011 271.152);
+        --white-2: oklch(5% 0.00011 271.152);
+        --link-color: oklch(48.245% 0.08047 265.192);
+        --focus-link-color: oklch(43.245% 0.08047 265.192);
+        --active-link-color: oklch(33.245% 0.08047 265.192);
+        --light-gray: oklch(15% 0.00011 271.152);
+        --dark-gray: oklch(40% 0.00011 271.152);
+        --light-gray-70: oklch(15% 0.00011 271.152 / 0.7);
+        --bittersweet-shimmer: oklch(55.836% 0.08047 355.192);
+        --shadow-1: -4px 8px 24px oklch(0% 0.00011 271.152 / 0.25);
+        --shadow-2: 0 16px 30px oklch(0% 0.00011 271.152 / 0.25);
+        --shadow-3: 0 16px 40px oklch(0% 0.00011 271.152 / 0.25);
+        --shadow-4: 0 25px 50px oklch(0% 0.00011 271.152 / 0.15);
+        --shadow-5: 0 24px 80px oklch(0% 0.00011 271.152 / 0.25);
+        --transparent: oklch(0% 0.00011 271.152 / 0.1);
+        --almost-transparent: oklch(0% 0.00011 271.152 / 0.15);
+        --box-shadow-transparent: oklch(0% 0.00011 271.152 / 0.11);
+        --almost-black: oklch(100% 0.00011 271.152);
+        --half-transparent: oklch(100% 0.00011 271.152 / 0.5);
 }
 
 .select-item button:hover {
-        --eerie-black-2: lch(70% 1.36 290.51);
+        --eerie-black-2: oklch(70% 0.00011 271.152);
 }
 
 @media (min-width: 1024px) {
         :root {
-                --shadow-1: -4px 8px 24px lch(100% 0 0 / 0.125);
-                --shadow-2: 0 16px 30px lch(100% 0 0 / 0.125);
-                --shadow-3: 0 16px 40px lch(100% 0 0 / 0.125);
+                --shadow-1: -4px 8px 24px oklch(0% 0.00011 271.152 / 0.125);
+                --shadow-2: 0 16px 30px oklch(0% 0.00011 271.152 / 0.125);
+                --shadow-3: 0 16px 40px oklch(0% 0.00011 271.152 / 0.125);
         }
 }
