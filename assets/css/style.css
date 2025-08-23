@@ -28,14 +28,14 @@ SPDX-License-Identifier: MIT
   ), oklch(24.435% 0.00011 271.152);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    oklch(89.838% 0.08047 265.192) 0%, 
-    oklch(84.738% 0.08047 265.192 / 0) 50%
+    oklch(80% 0.08047 265.192) 0%, 
+    oklch(75% 0.08047 265.192 / 0) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    oklch(89.838% 0.08047 265.192 / 0.251) 0%, 
-    oklch(83.752% 0.08047 265.192 / 0) 59.86%
-  ), oklch(24.435% 0.00378 286.016);
+    oklch(80% 0.08047 265.192 / 0.251) 0%, 
+    oklch(75% 0.08047 265.192 / 0) 59.86%
+  ), oklch(37.15% 0.00011 271.152);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
     oklch(37.15% 0.00011 271.152) 0%, 
@@ -43,8 +43,8 @@ SPDX-License-Identifier: MIT
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
-    oklch(90.092% 0.08047 265.192), 
-    oklch(83.752% 0.08047 265.192)
+    oklch(80% 0.08047 265.192),
+    oklch(70% 0.08047 265.192)
   );
 
   /* solid */
@@ -69,9 +69,9 @@ SPDX-License-Identifier: MIT
   --orange-yellow-crayola: oklch(90.092% 0.132 91.014);
   --vegas-gold: oklch(76.808% 0.11182 91.198);
 
-  --link-color: oklch(75% 0.08047 265.192);
-  --focus-link-color: oklch(80% 0.08047 265.192);
-  --active-link-color: oklch(90% 0.08047 265.192);
+  --link-color: oklch(65% 0.08047 265.192);
+  --focus-link-color: oklch(70% 0.08047 265.192);
+  --active-link-color: oklch(80% 0.08047 265.192);
   --light-gray: oklch(85% 0.00011 271.152);
   --dark-gray: oklch(60% 0.00011 271.152);
   --light-gray-70: oklch(85% 0.00011 271.152 / 0.7);
