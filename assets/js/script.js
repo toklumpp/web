@@ -1,10 +1,11 @@
 /*
-Copyright (c) 2024-2025 Tobias Klumpp <tobias.klumpp@toklumpp.net>
+Copyright (c) 2024-2025 Tobias Klumpp (https://www.toklumpp.net/)
 Copyright (c) 2022 codewithsadee
 SPDX-License-Identifier: MIT
 */
 'use strict';
-
+import externalLinks from './external-links.js';
+import geoUrls from './geo-urls.js';
 
 
 // element toggle function
@@ -159,3 +160,8 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+// Call the function on page load
+document.addEventListener('DOMContentLoaded', externalLinks);
+document.addEventListener('DOMContentLoaded', geoUrls);

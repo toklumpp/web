@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2025 Tobias Klumpp <tobias.klumpp@toklumpp.net>
+Copyright (c) 2025 Tobias Klumpp (https://www.toklumpp.net/)
 SPDX-License-Identifier: MIT
 */
 'use strict';
@@ -47,16 +47,8 @@ function replaceGeoUrl(match, latitude, longitude, zoom, platform) {
                 url += `&lvl=${zoom}`;
             }
             break;
-        case "Chrome OS":
-        case "Chromium OS":
-            // Use the googlechrome: URL scheme for Chrome OS
-            url = `googlechrome://maps/?q=${latitude},${longitude}`;
-            if (zoom) {
-                url += `&zoom=${zoom}`;
-            }
-            break;
         default:
-            // Use the geo: URL scheme for Android, Linux and unknown platforms
+            // Use the geo: URL scheme for Android, ChromeOS, Linux and unknown platforms
             url = match;
             break;
     }
@@ -64,7 +56,7 @@ function replaceGeoUrl(match, latitude, longitude, zoom, platform) {
     return url;
 }
 
-function makeGeoURLsCrossplatform() {
+export default function() {
     // Detect the platform
     const platform = detectPlatform();
 
@@ -79,4 +71,3 @@ function makeGeoURLsCrossplatform() {
         }
     });
 }
-document.addEventListener('DOMContentLoaded', makeGeoURLsCrossplatform);

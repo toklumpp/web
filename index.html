@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-Copyright (c) 2024-2025 Tobias Klumpp <tobias.klumpp@toklumpp.net>
+Copyright (c) 2024-2025 Tobias Klumpp (https://www.toklumpp.net/)
 Copyright (c) 2022 codewithsadee
 SPDX-License-Identifier: MIT
 -->
@@ -12,12 +12,12 @@ SPDX-License-Identifier: MIT
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Personal website of Tobias Klumpp" />
   <title>Tobias Klumpp</title>
-  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
   <link rel="canonical" href="https://www.toklumpp.net" />
+  <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" href="assets/css/colors.css" />
   <link rel="stylesheet" href="assets/css/dark.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/poppins.css" />
 </head>
 
 <body>
@@ -36,7 +36,8 @@ SPDX-License-Identifier: MIT
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img class="portrait-image u-photo" src="assets/images/portrait-cropped.jpeg" alt="Tobias Klumpp" width="80" />
+          <img class="portrait-image u-photo" src="assets/images/portrait-cropped.jpeg" alt="Tobias Klumpp"
+            width="80" />
         </figure>
 
         <div class="info-content">
@@ -47,7 +48,7 @@ SPDX-License-Identifier: MIT
         <button class="info_more-btn" data-sidebar-btn="data-sidebar-btn">
           <span>Show Contacts</span>
 
-          <ion-icon name="chevron-down"></ion-icon>
+          <ion-icon title="Chevron" name="chevron-down"></ion-icon>
         </button>
 
       </div>
@@ -57,19 +58,19 @@ SPDX-License-Identifier: MIT
         <div class="separator"></div>
 
         <ul class="contacts-list">
-           <li class="contact-item">
+          <li class="contact-item">
             <div class="icon-box">
-              <ion-icon name="globe-outline"></ion-icon>
+              <ion-icon title="Globe" name="globe-outline"></ion-icon>
             </div>
             <div class="contact-info">
               <p class="contact-title">Web</p>
-              <a href="https://www.toklumpp.net" class="contact-link u-url u-uid">www.toklumpp.net</a>
+              <a href="https://www.toklumpp.net" class="contact-link u-url u-uid" rel="me">www.toklumpp.net</a>
             </div>
           </li>
           <li class="contact-item">
 
             <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+              <ion-icon title="Mail" name="mail-outline"></ion-icon>
             </div>
 
             <div class="contact-info">
@@ -82,7 +83,7 @@ SPDX-License-Identifier: MIT
           <li class="contact-item">
 
             <div class="icon-box">
-              <ion-icon name="business-outline"></ion-icon>
+              <ion-icon title="Business" name="business-outline"></ion-icon>
             </div>
 
             <div class="contact-info">
@@ -94,13 +95,14 @@ SPDX-License-Identifier: MIT
           <li class="contact-item">
 
             <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
+              <ion-icon title="Location" name="location-outline"></ion-icon>
             </div>
 
             <div class="contact-info h-adr">
               <p class="contact-title">Location</p>
 
-              <a href="geo:53.3549,-6.2512?z=11"  class="contact-link"><span class="p-locality">Dublin</span>, <span class="p-country-name">Ireland</span></a>
+              <a href="geo:53.3549,-6.2512?z=11" class="contact-link"><span class="p-locality">Dublin</span>, <span
+                  class="p-country-name">Ireland</span></a>
             </div>
 
           </li>
@@ -113,29 +115,29 @@ SPDX-License-Identifier: MIT
 
           <li class="social-item">
             <a href="https://www.linkedin.com/in/toklumpp/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
+              <ion-icon title="Linkedin" name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
             <a href="https://www.instagram.com/toklumpp/" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
+              <ion-icon title="Instagram" name="logo-instagram"></ion-icon>
             </a>
           </li>
           <li class="social-item">
             <a href="https://www.facebook.com/toklumpp.net" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+              <ion-icon title="Facebook" name="logo-facebook"></ion-icon>
             </a>
           </li>
           <li class="social-item">
             <a href="https://github.com/toklumpp" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
+              <ion-icon title="Github" name="logo-github"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
             <a href="https://www.npmjs.com/~toklumpp" class="social-link">
-              <ion-icon name="logo-npm"></ion-icon>
+              <ion-icon title="NPM" name="logo-npm"></ion-icon>
             </a>
           </li>
 
@@ -164,11 +166,11 @@ SPDX-License-Identifier: MIT
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link="data-nav-link">About</button>
+            <button class="link  active" data-nav-link="data-nav-link">About</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link="data-nav-link">Resume</button>
+            <button class="link" data-nav-link="data-nav-link">Resume</button>
           </li>
 
         </ul>
@@ -197,7 +199,7 @@ SPDX-License-Identifier: MIT
           </p>
 
           <p>
-            My main focus is full stack web development. I have worked mainly in TypeScript, Angular, Java and Spring
+            My main focus is full stack web development. I have worked mainly in Angular, React and Spring Boot
             but I'm always eager to explore new technologies. I always strive to follow the latest design and
             engineering
             principles to deliver high quality and sustainable solutions.
@@ -218,14 +220,14 @@ SPDX-License-Identifier: MIT
             <li class="service-item">
 
               <div class="service-icon-box">
-                <ion-icon name="desktop-outline" size="large" class="service-icon"></ion-icon>
+                <ion-icon title="Desktop" name="desktop-outline" size="large" class="service-icon"></ion-icon>
               </div>
 
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Frontend</h4>
 
                 <p class="service-item-text">
-                  All things frontend, previously especially Angular and TypeScript, now also branching into React.
+                  All things frontend mostly using Angular or React.
                 </p>
               </div>
 
@@ -234,14 +236,14 @@ SPDX-License-Identifier: MIT
             <li class="service-item">
 
               <div class="service-icon-box">
-                <ion-icon name="server-outline" size="large" class="service-icon"></ion-icon>
+                <ion-icon title="Server" name="server-outline" size="large" class="service-icon"></ion-icon>
               </div>
 
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Backend</h4>
 
                 <p class="service-item-text">
-                  Backend solutions based on the Spring framework in Java.
+                  Backend solutions based on the Spring Boot framework in Java.
                 </p>
               </div>
 
@@ -250,7 +252,7 @@ SPDX-License-Identifier: MIT
             <li class="service-item">
 
               <div class="service-icon-box">
-                <ion-icon name="construct-outline" size="large" class="service-icon"></ion-icon>
+                <ion-icon title="Construct" name="construct-outline" size="large" class="service-icon"></ion-icon>
               </div>
 
               <div class="service-content-box">
@@ -266,7 +268,7 @@ SPDX-License-Identifier: MIT
             <li class="service-item">
 
               <div class="service-icon-box">
-                <ion-icon name="globe-outline" size="large" class="service-icon"></ion-icon>
+                <ion-icon title="Globe" name="globe-outline" size="large" class="service-icon"></ion-icon>
               </div>
 
               <div class="service-content-box">
@@ -298,12 +300,17 @@ SPDX-License-Identifier: MIT
         <header>
           <h2 class="h2 article-title">Resume</h2>
         </header>
-
+        <section class="about-text">
+          <h3 class="h3 about-title">Summary</h3>
+          <p>
+            Full stack web expert with React, Angular and Spring Boot experience. Currently working at Mastercard, previously PROMATIS (Oracle Partner). TCD and KIT Alumni.
+          </p>
+        </section>
         <section class="timeline">
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="briefcase-outline"></ion-icon>
+              <ion-icon title="Briefcase" name="briefcase-outline"></ion-icon>
             </div>
 
             <h3 class="h3">Experience</h3>
@@ -311,58 +318,84 @@ SPDX-License-Identifier: MIT
 
           <ol class="timeline-list">
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Software Engineer II</h4>
-              <span>Feb 2025 - Present</span>
-              <p class="timeline-text">
-                <a href="https://www.mastercard.com/" class="timeline-link">Mastercard</a>
-              </p>
+              <h4 class="title">
+                <a href="https://www.mastercard.com/" class="timeline-link">
+                  Mastercard
+                </a>
+              </h4>
+              <ol class="timeline-sublist">
+                <li class="timeline-subitem">
+                  <h5 class="h5 timeline-subitem-title">
+                    Software Engineer II
+                  </h5>
+                  <div class="subtitle">
+                    February 2025 - Present
+                  </div>
+                  <div class="subsubtitle">
+                    Dublin, Co. Dublin, Ireland
+                  </div>
+                  <p class="timeline-text">
+                    Full-stack web development using TypeScript with React and Java with Spring Boot. Further tools used include SQL, Maven, Git and Jenkins.
+                  </p>
+                </li>
+                <li class="timeline-subitem">
+                  <h5 class="h5 timeline-subitem-title">
+                    Software Engineer I
+                  </h5>
+                  <div class="subtitle">
+                    September 2023 - February 2025
+                  </div>
+                  <div class="subsubtitle">
+                    Dublin, Co. Dublin, Ireland
+                  </div>
+                  <p class="timeline-text">
+                    Full-stack web development using JavaScript with AngularJS, Groovy with Grails and PostgreSQL. Additional tools used include Gradle, Jenkins and Git.
+                  </p>
+                </li>
+              </ol>
             </li>
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Software Engineer I</h4>
-              <span>Sep 2023 - Feb 2025</span>
-              <p class="timeline-text">
-                <a href="https://www.mastercard.com/" class="timeline-link">Mastercard</a>
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Working Student, Software Engineering</h4>
-
-              <span>Dec 2021 - Aug 2022</span>
-
-              <p class="timeline-text">
-                <a href="https://promatis.com/de/en/" class="timeline-link">PROMATIS</a>
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Tutor, Computer Science</h4>
-              <span>Oct 2018 - Mar 2021</span>
-              <p class="timeline-text">
-                <a href="https://www.kit.edu/" class="timeline-link">Karlsruhe
-                  Institute of Technology (KIT)</a>
-              </p>
-
+              <h4 class="title">
+                <a href="https://promatis.com/de/en/" class="timeline-link">
+                  PROMATIS
+                </a>
+              </h4>
+              <ol class="timeline-sublist">
+                <li class="timeline-subitem">
+                  <h5 class="h5 timeline-subitem-title">
+                    Working Student, Software Engineering
+                  </h5>
+                  <div class="subtitle">
+                    December 2021 - August 2022
+                  </div>
+                  <div class="subsubtitle">
+                    Ettlingen, Baden-Württemberg, Germany
+                  </div>
+                  <p class="timeline-text">
+                    Full-stack web development using TypeScript with Angular, Java with the Spring Framework and SQL.
+                  </p>
+                </li>
+              </ol>
             </li>
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Student Assistant, IT</h4>
-              <span>Sep 2014 - Aug 2017</span>
-              <p class="timeline-text">
-                <a href="https://www.phaenovum.eu/de/" class="timeline-link">phaenovum Schülerforschungszentrum Lörrach-Dreiländereck</a>
-              </p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Intern, Software Engineering</h4>
-              <span>Oct 2014</span>
-
-              <p class="timeline-text">
-                <a href="https://www.regiodata-gmbh.de/de" class="timeline-link">regioDATA</a>
-              </p>
-
+              <h4 class="title">
+                <a href="https://www.kit.edu/english/" class="timeline-link">
+                  Karlsruhe Institute of Technology (KIT)
+                </a>
+              </h4>
+              <ol class="timeline-sublist">
+                <li class="timeline-subitem">
+                  <h5 class="h5 timeline-subitem-title">
+                    Computer Science Tutor
+                  </h5>
+                  <div class="subtitle">
+                    October 2018 - March 2021
+                  </div>
+                  <div class="subsubtitle">
+                    Karlsruhe, Baden-Württemberg, Germany
+                  </div>
+                </li>
+              </ol>
             </li>
 
 
@@ -375,7 +408,7 @@ SPDX-License-Identifier: MIT
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon title="Book" name="book-outline"></ion-icon>
             </div>
 
             <h3 class="h3">Education</h3>
@@ -384,56 +417,43 @@ SPDX-License-Identifier: MIT
           <ol class="timeline-list">
 
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Master of Science, Computer Science</h4>
-
-              <span>Sep 2022 - Aug 2023</span>
-
-              <p class="timeline-text">
-                <a href="https://www.tcd.ie/" class="timeline-link">Trinity
-                  College Dublin (TCD)</a>
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Bachelor of Science, Informatics / Computer Science</h4>
-
-              <span>Oct 2017 - Aug 2022</span>
-
-              <p class="timeline-text">
-                <a href="https://www.kit.edu/" class="timeline-link">Karlsruhe
-                  Institute of Technology (KIT)</a>
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="heart-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Volunteering</h3>
-          </div>
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Mastercard TY4TECH</h4>
-              <span>Oct 2024</span>
-              <p class="timeline-text">
-                Mentored two groups of transition year students during their project work for the TY4TECH program.
-              </p>
+              <h4 class="title">
+                <a href="https://www.tcd.ie/" class="timeline-link">
+                  Trinity College Dublin (TCD)
+                </a>
+              </h4>
+              <ol class="timeline-sublist">
+                <li class="timeline-subitem">
+                  <h5 class="h5 timeline-subitem-title">
+                    Master of Science, Computer Science
+                  </h5>
+                  <div class="subtitle">
+                    September 2022 - August 2023
+                  </div>
+                  <div class="subsubtitle">
+                    Dublin, Co. Dublin, Ireland
+                  </div>
+                </li>
+              </ol>
             </li>
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Fastrack into Information Technology (FIT)</h4>
-              <span>Dec 2023 - Mar 2024</span>
-              <p class="timeline-text">
-                Developed a donor engagement strategy with a group of graduates as part of the "Launch for Social
-                Impact" project.
-              </p>
+              <h4 class="title">
+                <a href="https://www.kit.edu/english/" class="timeline-link">
+                  Karlsruhe Institute of Technology (KIT)</a>
+              </h4>
+              <ol class="timeline-sublist">
+                <li class="timeline-subitem">
+                  <h5 class="h5 timeline-subitem-title">
+                    Bachelor of Science, Informatics / Computer Science
+                  </h5>
+                  <div class="subtitle">
+                    October 2017 - November 2021
+                  </div>
+                  <div class="subsubtitle">
+                    Karlsruhe, Baden-Württemberg, Germany
+                  </div>
+                </li>
+              </ol>
             </li>
           </ol>
         </section>
@@ -441,9 +461,7 @@ SPDX-License-Identifier: MIT
     </div>
 
   </main>
-  <script type="text/javascript" src="assets/js/script.js"></script>
-  <script type="text/javascript" src="assets/js/external-links.js"></script>
-  <script type="text/javascript" src="assets/js/geo-urls.js"></script>
+  <script type="module" src="assets/js/script.js"></script>
   <script type="text/javascript" src="node_modules/ionicons/dist/ionicons/ionicons.js"></script>
 </body>
 
