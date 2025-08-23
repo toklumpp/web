@@ -493,7 +493,7 @@ main {
 }
 
 
-.navbar .link:hover,:focus { color: var(--focus-link-color); }
+.navbar .link:hover,.navbar .link:focus { color: var(--focus-link-color); }
 .navbar .link.active { color: var(--active-link-color); }
 
 
