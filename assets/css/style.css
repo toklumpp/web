@@ -448,12 +448,12 @@ main {
 }
 
 .social-item .link {
-  color: var(--light-gray-70);
+  color: var(--link-color);
   font-size: 18px;
 }
 
 
-.social-item .link:hover { color: var(--light-gray); }
+.social-item :is(.link:hover, .link:focus) { color: var(--focus-link-color); }
 
 
 
