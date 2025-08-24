@@ -434,7 +434,7 @@ main {
   margin-bottom: 2px;
 }
 
-.contact-info :is(.contact-link, time) {
+.contact-info :is(.link, time) {
   color: var(--white-2);
   font-size: var(--fs-7);
 }
@@ -447,13 +447,13 @@ main {
   padding-left: 7px;
 }
 
-.social-item .social-link {
+.social-item .link {
   color: var(--light-gray-70);
   font-size: 18px;
 }
 
 
-.social-item .social-link:hover { color: var(--light-gray); }
+.social-item .link:hover { color: var(--light-gray); }
 
 
 
@@ -1878,13 +1878,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .contacts-list { grid-template-columns: 1fr; }
 
-  .contact-info :is(.contact-link) {
+  .contact-info :is(.link) {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
-  .contact-info :is(.contact-link, time) {
+  .contact-info :is(.link, time) {
     --fs-7: 14px;
     font-weight: var(--fw-300);
   }
@@ -1910,7 +1910,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   color: var(--active-link-color);
 }
 
-.timeline-link {
+.timeline-item .link {
   color: var(--link-color);;
 }
 .contact-info {
