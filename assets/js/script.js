@@ -4,7 +4,6 @@ Copyright (c) 2022 codewithsadee
 SPDX-License-Identifier: MIT
 */
 'use strict';
-import externalLinks from './external-links.js';
 import geoUrls from './geo-urls.js';
 
 
@@ -160,8 +159,4 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
-
-
-// Call the function on page load
-document.addEventListener('DOMContentLoaded', externalLinks);
 document.addEventListener('DOMContentLoaded', geoUrls);
