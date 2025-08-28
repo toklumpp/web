@@ -434,7 +434,7 @@ main {
   margin-bottom: 2px;
 }
 
-.contact-info :is(.link, time) {
+.contact-info :is(a, time) {
   color: var(--white-2);
   font-size: var(--fs-7);
 }
@@ -447,13 +447,13 @@ main {
   padding-left: 7px;
 }
 
-.social-item .link {
+.social-item a {
   color: var(--link-color);
   font-size: 18px;
 }
 
 
-.social-item :is(.link:hover, .link:focus) { color: var(--focus-link-color); }
+.social-item :is(a:hover, a:focus) { color: var(--focus-link-color); }
 
 
 
@@ -485,7 +485,7 @@ main {
   padding: 0 10px;
 }
 
-.navbar .link {
+.navbar a {
   color: var(--link-color);
   font-size: var(--fs-8);
   padding: 20px 7px;
@@ -493,8 +493,8 @@ main {
 }
 
 
-.navbar .link:hover,.navbar .link:focus { color: var(--focus-link-color); }
-.navbar .link.active { color: var(--active-link-color); }
+.navbar a:hover,.navbar a:focus { color: var(--focus-link-color); }
+.navbar a.active { color: var(--active-link-color); }
 
 
 
@@ -1399,7 +1399,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .navbar-list { gap: 20px; }
 
-  .navbar .link { --fs-8: 14px; }
+  .navbar a { --fs-8: 14px; }
 
 
 
@@ -1599,7 +1599,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * NAVBAR
    */
 
-  .navbar .link { --fs-8: 15px; }
+  .navbar a { --fs-8: 15px; }
 
 
 
@@ -1738,7 +1738,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding: 0 20px;
   }
 
-  .navbar .link { font-weight: var(--fw-500); }
+  .navbar a { font-weight: var(--fw-500); }
 
 
 
@@ -1878,13 +1878,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .contacts-list { grid-template-columns: 1fr; }
 
-  .contact-info :is(.link) {
+  .contact-info :is(a) {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
-  .contact-info :is(.link, time) {
+  .contact-info :is(a, time) {
     --fs-7: 14px;
     font-weight: var(--fw-300);
   }
@@ -1910,7 +1910,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   color: var(--active-link-color);
 }
 
-.timeline-item .link {
+.timeline-item a {
   color: var(--link-color);;
 }
 .contact-info {
