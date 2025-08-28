@@ -200,7 +200,7 @@ article {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  color: var(--active-link-color);
+  color: var(--light-gray);
   box-shadow: var(--shadow-1);
   z-index: 1;
 }
@@ -372,7 +372,7 @@ main {
   right: -15px;
   border-radius: 0 15px;
   font-size: 13px;
-  color: var(--active-link-color);
+  color: var(--link-color);
   background: var(--border-gradient-onyx);
   padding: 10px;
   box-shadow: var(--shadow-2);
@@ -435,9 +435,13 @@ main {
 }
 
 .contact-info :is(a, time) {
-  color: var(--white-2);
   font-size: var(--fs-7);
 }
+
+.contact-info time {
+  color: var(--white-2);
+}
+
 .social-list {
   display: flex;
   justify-content: flex-start;
@@ -448,17 +452,17 @@ main {
 }
 
 .social-item a {
-  color: var(--link-color);
   font-size: 18px;
 }
 
+a {
+  color: var(--link-color);
+}
 
-.social-item :is(a:hover, a:focus) { color: var(--focus-link-color); }
-
-
-
-
-
+a:hover,
+a:focus {
+  color: var(--focus-link-color);
+}
 /*-----------------------------------*\
   #NAVBAR
 \*-----------------------------------*/
@@ -486,20 +490,14 @@ main {
 }
 
 .navbar a {
-  color: var(--link-color);
   font-size: var(--fs-8);
   padding: 20px 7px;
   transition: color var(--transition-1);
 }
 
-
-.navbar a:hover,.navbar a:focus { color: var(--focus-link-color); }
-.navbar a.active { color: var(--active-link-color); }
-
-
-
-
-
+.navbar a.active {
+  color: var(--active-link-color);
+}
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
@@ -1910,9 +1908,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   color: var(--active-link-color);
 }
 
-.timeline-item a {
-  color: var(--link-color);;
-}
 .contact-info {
   display: inline;
 }
