@@ -53,14 +53,20 @@ SPDX-License-Identifier: MIT
 
 --cadet-gray: oklch(73.677% 0.02488 264.442);
 
+--dark-grey: oklch(48.245% 0.00011 271.152);
 --blue: oklch(48.245% 0.08047 265.192);
---grey: oklch(63.343% 0.00011 271.152);
+--medium-grey: oklch(63.343% 0.00011 271.152);
+--medium-blue: oklch(63.343% 0.08047 265.192);
 
+--tinted-white: oklch(100% 0.08047 265.192);
 --white: oklch(100% 0.00011 271.152);
 --light-blue: oklch(83.013% 0.08047 265.192);
+--light-grey: oklch(83.013% 0.00011 271.152);
 
 --white-smoke: oklch(96.416% 0.00011 271.152);
+--tinted-white-smoke: oklch(96.416% 0.08047 265.192);
 --blue-smoke: oklch(76.713% 0.08047 265.192);
+--grey-smoke: oklch(76.713% 0.00011 271.152);
 
   --jet: oklch(34.07% 0.00011 271.152);
   --onyx: oklch(28.946% 0.00011 271.152);
