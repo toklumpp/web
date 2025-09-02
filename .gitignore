@@ -6,6 +6,8 @@
 
 # Webspace
 logs/
+git/
+www/
 
 # Synology NAS
 \#snapshot/
