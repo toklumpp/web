@@ -8,6 +8,8 @@
 logs/
 git/
 www/
+colorgen/
+dishpos/
 
 # Synology NAS
 \#snapshot/
