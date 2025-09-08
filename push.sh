@@ -1,5 +1,7 @@
 #!/bin/bash
-git push nas
-git push git
-git push tangled
-git push github
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+git push --all nas
+git push --all git
+git push --all tangled
+git push --all github
