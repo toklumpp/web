@@ -4,6 +4,7 @@ Copyright (c) 2022 codewithsadee
 SPDX-License-Identifier: MIT
 */
 'use strict';
+import "../../node_modules/ionicons/dist/ionicons/ionicons.esm.js";
 import geoUrls from './geo-urls.js';
 
 
