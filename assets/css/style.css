@@ -49,20 +49,15 @@ SPDX-License-Identifier: MIT
 
   /* solid */
 
-  --gunmetal: oklch(31.623% 0.02542 275.406);
-
---cadet-gray: oklch(73.677% 0.02488 264.442);
-
---dark-grey: oklch(48.245% 0.00011 271.152);
 --blue: oklch(48.245% 0.08047 265.192);
+--white: oklch(100% 0.00011 271.152);
 --medium-grey: oklch(63.343% 0.00011 271.152);
 --medium-blue: oklch(63.343% 0.08047 265.192);
 
---white: oklch(100% 0.00011 271.152);
 --light-blue: oklch(83.269% 0.08047 265.192);
-  --light-grey: oklch(82.968% 0.00009 271.152);
+  --light-grey: oklch(82.968% 0.00011 271.152);
   --medium-light-blue: oklch(67.205% 0.08047 265.192);
-  --medium-light-grey: oklch(67.418% 0.00009 271.152);
+  --medium-light-grey: oklch(67.418% 0.00011 271.152);
   --medium-blue: oklch(54.785% 0.08047 265.192);
   --medium-grey: oklch(54.785% 0.00009 271.152);
   --medium-dark-blue: oklch(45.618% 0.08047 265.192);
@@ -438,6 +433,9 @@ main {
   gap: 16px;
 }
 
+.icon-box ion-icon {
+  color: var(--light-grey);
+}
 .contact-info {
   max-width: calc(100% - 46px);
   width: calc(100% - 46px);
@@ -1921,7 +1919,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .service-icon {
-  color: var(--active-link-color);
+  color: var(--light-grey);
 }
 
 .contact-info {
