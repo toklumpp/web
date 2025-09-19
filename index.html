@@ -7,10 +7,25 @@ SPDX-License-Identifier: MIT
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Personal website of Tobias Klumpp" />
+  <meta property="og:url" content="https://www.toklumpp.net" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tobias Klumpp" />
+  <meta property="og:description" content="Personal website of Tobias Klumpp" />
+  <meta property="og:image"
+    content="https://www.toklumpp.net/assets/images/site-thumbnail.jpeg" />
+  <meta property="og:logo"
+    content="https://www.toklumpp.net/assets/images/favicon.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="www.toklumpp.net" />
+  <meta property="twitter:url" content="https://www.toklumpp.net" />
+  <meta name="twitter:title" content="Tobias Klumpp" />
+  <meta name="twitter:description"
+    content="Personal website of Tobias Klumpp" />
+  <meta name="twitter:image"
+    content="https://www.toklumpp.net/assets/images/site-thumbnail.jpeg" />
   <title>Tobias Klumpp</title>
   <link rel="icon" type="image/png" href="assets/images/favicon.png" />
   <link rel="canonical" href="https://www.toklumpp.net" />
@@ -34,7 +49,8 @@ SPDX-License-Identifier: MIT
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img class="portrait-image u-photo" src="assets/images/portrait-cropped.jpeg" alt="Tobias Klumpp"
+          <img class="portrait-image u-photo"
+            src="assets/images/portrait-cropped.jpeg" alt="Tobias Klumpp"
             width="80" />
         </figure>
 
@@ -61,7 +77,8 @@ SPDX-License-Identifier: MIT
             </div>
             <div class="contact-info">
               <p class="contact-title">Web</p>
-              <a href="https://www.toklumpp.net" class="u-url u-uid" rel="me">www.toklumpp.net</a>
+              <a href="https://www.toklumpp.net" class="u-url u-uid"
+                rel="me">www.toklumpp.net</a>
             </div>
           </li>
           <li class="contact-item">
@@ -72,7 +89,8 @@ SPDX-License-Identifier: MIT
 
             <div class="contact-info">
               <p class="contact-title">Email</p>
-              <a href="mailto:info@toklumpp.net" class="u-email">info@toklumpp.net</a>
+              <a href="mailto:info@toklumpp.net"
+                class="u-email">info@toklumpp.net</a>
             </div>
 
           </li>
@@ -85,7 +103,8 @@ SPDX-License-Identifier: MIT
 
             <div class="contact-info">
               <p class="contact-title">Company</p>
-              <a href="https://www.mastercard.com/">Mastercard</a>
+              <a href="https://www.mastercard.com/" class="contact-link"
+                rel="noopener" target="_blank">Mastercard</a>
             </div>
 
           </li>
@@ -111,29 +130,26 @@ SPDX-License-Identifier: MIT
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="https://www.linkedin.com/in/toklumpp/">
+            <a href="https://www.linkedin.com/in/toklumpp/" class="social-link"
+              rel="noopener" target="_blank">
               <ion-icon title="Linkedin" name="logo-linkedin"></ion-icon>
             </a>
           </li>
-
           <li class="social-item">
-            <a href="https://www.instagram.com/toklumpp/">
-              <ion-icon title="Instagram" name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://www.facebook.com/toklumpp.net">
-              <ion-icon title="Facebook" name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://github.com/toklumpp">
+            <a href="https://github.com/toklumpp" class="social-link"
+              rel="noopener" target="_blank">
               <ion-icon title="Github" name="logo-github"></ion-icon>
             </a>
           </li>
-
           <li class="social-item">
-            <a href="https://www.npmjs.com/~toklumpp">
+            <a href="https://mastodon.social/@toklumpp" class="social-link"
+              rel="noopener me" target="_blank">
+              <ion-icon title="Mastodon" name="logo-mastodon"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.npmjs.com/~toklumpp" class="social-link"
+              rel="noopener" target="_blank">
               <ion-icon title="NPM" name="logo-npm"></ion-icon>
             </a>
           </li>
@@ -169,7 +185,9 @@ SPDX-License-Identifier: MIT
           <li class="navbar-item">
             <a href="#" data-nav-link="data-nav-link">Resume</a>
           </li>
-
+          <li class="navbar-item">
+            <button class="link" data-nav-link="data-nav-link">Projects</button>
+          </li>
         </ul>
 
       </nav>
@@ -191,13 +209,16 @@ SPDX-License-Identifier: MIT
         <section class="about-text">
           <h3 class="h3 about-title">Bio</h3>
           <p class="p-note">
-            I'm a Software Engineer living and working in Dublin. I love to solve complex problems using
+            I'm a Software Engineer living and working in Dublin. I love to
+            solve complex problems using
             the latest technologies.
           </p>
 
           <p>
-            My main focus is full stack web development. I have worked mainly in Angular, React and Spring Boot
-            but I'm always eager to explore new technologies. I always strive to follow the latest design and
+            My main focus is full stack web development. I have worked mainly in
+            Angular, React and Spring Boot
+            but I'm always eager to explore new technologies. I always strive to
+            follow the latest design and
             engineering
             principles to deliver high quality and sustainable solutions.
           </p>
@@ -217,7 +238,8 @@ SPDX-License-Identifier: MIT
             <li class="service-item">
 
               <div class="service-icon-box">
-                <ion-icon title="Desktop" name="desktop-outline" size="large" class="service-icon"></ion-icon>
+                <ion-icon title="Desktop" name="desktop-outline" size="large"
+                  class="service-icon"></ion-icon>
               </div>
 
               <div class="service-content-box">
@@ -233,7 +255,8 @@ SPDX-License-Identifier: MIT
             <li class="service-item">
 
               <div class="service-icon-box">
-                <ion-icon title="Server" name="server-outline" size="large" class="service-icon"></ion-icon>
+                <ion-icon title="Server" name="server-outline" size="large"
+                  class="service-icon"></ion-icon>
               </div>
 
               <div class="service-content-box">
@@ -249,14 +272,16 @@ SPDX-License-Identifier: MIT
             <li class="service-item">
 
               <div class="service-icon-box">
-                <ion-icon title="Construct" name="construct-outline" size="large" class="service-icon"></ion-icon>
+                <ion-icon title="Construct" name="construct-outline"
+                  size="large" class="service-icon"></ion-icon>
               </div>
 
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Infrastructure</h4>
 
                 <p class="service-item-text">
-                  Managing deployment of web services especially on Linux platforms and using Jenkins.
+                  Managing deployment of web services especially on Linux
+                  platforms and using Jenkins.
                 </p>
               </div>
 
@@ -265,14 +290,16 @@ SPDX-License-Identifier: MIT
             <li class="service-item">
 
               <div class="service-icon-box">
-                <ion-icon title="Globe" name="globe-outline" size="large" class="service-icon"></ion-icon>
+                <ion-icon title="Globe" name="globe-outline" size="large"
+                  class="service-icon"></ion-icon>
               </div>
 
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Network</h4>
 
                 <p class="service-item-text">
-                  I have a particular interest in networking and internet infrastructure.
+                  I have a particular interest in networking and internet
+                  infrastructure.
                 </p>
               </div>
 
@@ -300,7 +327,9 @@ SPDX-License-Identifier: MIT
         <section class="about-text">
           <h3 class="h3 about-title">Summary</h3>
           <p>
-            Full stack web expert with React, Angular and Spring Boot experience. Currently working at Mastercard, previously PROMATIS (Oracle Partner). TCD and KIT Alumni.
+            Full stack web expert with React, Angular and Spring Boot
+            experience. Currently working at Mastercard, previously PROMATIS
+            (Oracle Partner). TCD and KIT Alumni.
           </p>
         </section>
         <section class="timeline">
@@ -316,7 +345,8 @@ SPDX-License-Identifier: MIT
           <ol class="timeline-list">
             <li class="timeline-item">
               <h4 class="title">
-                <a href="https://www.mastercard.com/">
+                <a href="https://www.mastercard.com/" class="timeline-link"
+                  rel="noopener" target="_blank">
                   Mastercard
                 </a>
               </h4>
@@ -332,7 +362,9 @@ SPDX-License-Identifier: MIT
                     Dublin, Co. Dublin, Ireland
                   </div>
                   <p class="timeline-text">
-                    Full-stack web development using TypeScript with React and Java with Spring Boot. Further tools used include SQL, Maven, Git and Jenkins.
+                    Full-stack web development using TypeScript with React and
+                    Java with Spring Boot. Further tools used include SQL,
+                    Maven, Git and Jenkins.
                   </p>
                 </li>
                 <li class="timeline-subitem">
@@ -346,14 +378,17 @@ SPDX-License-Identifier: MIT
                     Dublin, Co. Dublin, Ireland
                   </div>
                   <p class="timeline-text">
-                    Full-stack web development using JavaScript with AngularJS, Groovy with Grails and PostgreSQL. Additional tools used include Gradle, Jenkins and Git.
+                    Full-stack web development using JavaScript with AngularJS,
+                    Groovy with Grails and PostgreSQL. Additional tools used
+                    include Gradle, Jenkins and Git.
                   </p>
                 </li>
               </ol>
             </li>
             <li class="timeline-item">
               <h4 class="title">
-                <a href="https://promatis.com/de/en/">
+                <a href="https://promatis.com/de/en/" class="timeline-link"
+                  rel="noopener" target="_blank">
                   PROMATIS
                 </a>
               </h4>
@@ -369,14 +404,16 @@ SPDX-License-Identifier: MIT
                     Ettlingen, Baden-Württemberg, Germany
                   </div>
                   <p class="timeline-text">
-                    Full-stack web development using TypeScript with Angular, Java with the Spring Framework and SQL.
+                    Full-stack web development using TypeScript with Angular,
+                    Java with the Spring Framework and SQL.
                   </p>
                 </li>
               </ol>
             </li>
             <li class="timeline-item">
               <h4 class="title">
-                <a href="https://www.kit.edu/english/">
+                <a href="https://www.kit.edu/english/" class="timeline-link"
+                  rel="noopener" target="_blank">
                   Karlsruhe Institute of Technology (KIT)
                 </a>
               </h4>
@@ -415,7 +452,8 @@ SPDX-License-Identifier: MIT
 
             <li class="timeline-item">
               <h4 class="title">
-                <a href="https://www.tcd.ie/">
+                <a href="https://www.tcd.ie/" class="timeline-link"
+                  rel="noopener" target="_blank">
                   Trinity College Dublin (TCD)
                 </a>
               </h4>
@@ -435,7 +473,8 @@ SPDX-License-Identifier: MIT
             </li>
             <li class="timeline-item">
               <h4 class="title">
-                <a href="https://www.kit.edu/english/">
+                <a href="https://www.kit.edu/english/" class="timeline-link"
+                  rel="noopener" target="_blank">
                   Karlsruhe Institute of Technology (KIT)</a>
               </h4>
               <ol class="timeline-sublist">
@@ -455,11 +494,59 @@ SPDX-License-Identifier: MIT
           </ol>
         </section>
       </article>
+      <article class="portfolio" data-page="projects">
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+        <section class="projects">
+          <ul class="project-list">
+            <li class="project-item  active" data-filter-item
+              data-category="web app">
+              <a href="https://dishpos.toklumpp.net" rel="noopener"
+                target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="globe-outline" title="Web">
+                    </ion-icon>
+                  </div>
+                  <img src="./assets/images/dishpos-thumbnail.jpeg"
+                    alt="Dishpos Website" loading="lazy" />
+                </figure>
+                <h3 class="project-title">
+                  Dishpos Satellite Dish Positioner
+                </h3>
+                <p class="project-category">
+                  Web app
+                </p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item
+              data-category="web app">
+              <a href="https://colorgen.toklumpp.net" rel="noopener"
+                target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="globe-outline" title="Web">
+                    </ion-icon>
+                  </div>
+                  <img src="./assets/images/colorgen-thumbnail.jpeg"
+                    alt="Colorgen Website" loading="lazy" />
+                </figure>
+                <h3 class="project-title">
+                  Colorgen (Work in Progress)
+                </h3>
+                <p class="project-category">
+                  Web app
+                </p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
     </div>
 
   </main>
   <script type="module" src="assets/js/script.js"></script>
-  <script type="text/javascript" src="node_modules/ionicons/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
