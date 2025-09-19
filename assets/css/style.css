@@ -511,6 +511,8 @@ a:focus {
 
 .navbar a.active {
   color: var(--active-link-color);
+  pointer-events: none;
+    cursor: default;
 }
 /*-----------------------------------*\
   #ABOUT
