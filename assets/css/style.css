@@ -1933,3 +1933,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 .p-country-name {
   display: inline;
 }
+.no-link {
+  color: var(--light-grey);
+  pointer-events: none;
+  cursor: default;
+}

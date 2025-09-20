@@ -41,11 +41,7 @@ function replaceGeoUrl(match, latitude, longitude, zoom, platform) {
             }
             break;
         case "Windows":
-            // Use the bingmaps: URL scheme for Windows Maps app
-            url = `bingmaps:?cp=${latitude}~${longitude}`;
-            if (zoom) {
-                url += `&lvl=${zoom}`;
-            }
+            url = `https://invalid?cp=${latitude},${longitude}`;
             break;
         default:
             // Use the geo: URL scheme for Android, ChromeOS, Linux and unknown platforms
@@ -56,7 +52,7 @@ function replaceGeoUrl(match, latitude, longitude, zoom, platform) {
     return url;
 }
 
-export default function() {
+export default function () {
     // Detect the platform
     const platform = detectPlatform();
 
@@ -68,6 +64,9 @@ export default function() {
         const match = link.href.match(geoUrlPattern);
         if (match) {
             link.href = replaceGeoUrl(link.href, match[1], match[2], match[5], platform);
+            if (link.href.match(/invalid/i)) {
+                link.className += " no-link";
+            }
         }
     });
 }
