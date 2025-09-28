@@ -52,7 +52,7 @@ function replaceGeoUrl(match, latitude, longitude, zoom, platform) {
     return url;
 }
 
-export default function () {
+function geoUrls() {
     // Detect the platform
     const platform = detectPlatform();
 
@@ -70,3 +70,5 @@ export default function () {
         }
     });
 }
+
+document.addEventListener('DOMContentLoaded', geoUrls);
