@@ -14,9 +14,5 @@
     "sizes": "512x512",
 "purpose": "any"
   }],
-  "description": "Personal Website of Tobias Klumpp",
-  "related_applications": [{
-    "platform": "Web",
-    "url": "https://www.toklumpp.net/"
-  }]
+  "description": "Personal Website of Tobias Klumpp"
 }
