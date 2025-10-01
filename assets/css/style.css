@@ -1938,3 +1938,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   pointer-events: none;
   cursor: default;
 }
+h2 a {
+  display: inline-block;
+  vertical-align: middle;
+}
