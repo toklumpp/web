@@ -22,3 +22,5 @@ node_modules/ionicons/components
 node_modules/.bin
 node_modules/ionicons/icons
 node_modules/package.json
+
+dist/
