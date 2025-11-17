@@ -1,0 +1,1 @@
+rsync -avr -e "ssh" --exclude '.git' . web:~/test/
