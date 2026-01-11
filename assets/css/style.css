@@ -3,8 +3,7 @@ Copyright (c) 2024-2025 Tobias Klumpp (https://www.toklumpp.net/)
 copyright 2022 @codewithsadee
 SPDX-License-Identifier: MIT
 */
-@import "colors.css";
-@import "dark.css" screen and (prefers-color-scheme: dark);
+@import "dark.css";
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -1957,8 +1956,8 @@ textarea.form-input::-webkit-resizer {
     border: 5px solid var(--smoky-black);
     background: var(--transparent);
     border-radius: 20px;
-    box-shadow: inset 1px 1px 0 var(--box-shadown-transparent),
-      inset -1px -1px 0 var(--box-shadown-transparent);
+    box-shadow: inset 1px 1px 0 var(--box-shadow-transparent),
+      inset -1px -1px 0 var(--box-shadow-transparent);
   }
 
   body::-webkit-scrollbar-thumb:hover {

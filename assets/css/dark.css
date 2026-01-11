@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2025 Tobias Klumpp <tobias.klumpp@toklumpp.net>
+Copyright (c) 2025 Tobias Klumpp (https://www.toklumpp.net/)
 SPDX-License-Identifier: MIT
 */
 :root {
@@ -24,9 +24,26 @@ SPDX-License-Identifier: MIT
         --text-gradient-yellow: linear-gradient(to right,
                         oklch(80% 0.08047 265.192),
                         oklch(70% 0.08047 265.192));
+        --medium-grey: oklch(63.343% 0.00011 271.152);
+        --medium-blue: oklch(63.343% 0.08047 265.192);
+
+        --light-blue: oklch(83.269% 0.08047 265.192);
+        --light-grey: oklch(82.968% 0.00011 271.152);
+        --medium-light-blue: oklch(67.205% 0.08047 265.192);
+        --medium-light-grey: oklch(67.418% 0.00011 271.152);
+        --medium-blue: oklch(54.785% 0.08047 265.192);
+        --medium-grey: oklch(54.785% 0.00009 271.152);
+        --medium-dark-blue: oklch(45.618% 0.08047 265.192);
+        --medium-dark-grey: oklch(45.618% 0.00009 271.152);
+        --dark-blue: oklch(37.98641% 0.08047 265.192);
+        --dark-grey: oklch(37.98641% 0.00009 271.152);
+
+        --tinted-white-smoke: oklch(96.416% 0.08047 265.192);
+        --blue-smoke: oklch(76.713% 0.08047 265.192);
+        --grey-smoke: oklch(76.713% 0.00011 271.152);
         --jet: oklch(34.07% 0.00011 271.152);
         --onyx: oklch(28.946% 0.00011 271.152);
-        --onyx-transparent: oklch(28.946% 0.00011 271.152 / 0.75);
+        --onyx-transparent: hsla(240, 1%, 17%, 0.75);
         --eerie-black-1: oklch(24.435% 0.00011 271.152);
         --eerie-black-2: oklch(23.544% 0.00011 271.152);
         --smoky-black: oklch(18.22% 0.00011 271.152);
@@ -34,33 +51,33 @@ SPDX-License-Identifier: MIT
         --white-2: oklch(96.416% 0.00011 271.152);
         --orange-yellow-crayola: oklch(90.092% 0.132 91.014);
         --vegas-gold: oklch(76.808% 0.11182 91.198);
-        --link-color: oklch(65% 0.08047 265.192);
-        --focus-link-color: oklch(70% 0.08047 265.192);
-        --active-link-color: oklch(80% 0.08047 265.192);
+        --link-color: var(--medium-light-blue);
+        --focus-link-color: var(--light-blue);
+        --active-link-color: var(--white);
         --light-gray: oklch(85% 0.00011 271.152);
         --dark-gray: oklch(60% 0.00011 271.152);
         --light-gray-70: oklch(85% 0.00011 271.152 / 0.7);
         --bittersweet-shimmer: oklch(55.836% 0.08047 355.192);
-        --shadow-1: -4px 8px 24px oklch(0% 0.00011 271.152 / 0.25);
-        --shadow-2: 0 16px 30px oklch(0% 0.00011 271.152 / 0.25);
-        --shadow-3: 0 16px 40px oklch(0% 0.00011 271.152 / 0.25);
-        --shadow-4: 0 25px 50px oklch(0% 0.00011 271.152 / 0.15);
-        --shadow-5: 0 24px 80px oklch(0% 0.00011 271.152 / 0.25);
-        --transparent: oklch(100% 0.00011 271.152 / 0.1);
-        --almost-transparent: oklch(100% 0.00011 271.152 / 0.15);
-        --box-shadow-transparent: oklch(100% 0.00011 271.152 / 0.11);
-        --almost-black: oklch(0% 0.00011 271.152);
-        --half-transparent: oklch(0% 0.00011 271.152 / 0.5);
+        --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+        --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+        --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
+        --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
+        --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
+        --transparent: hsla(0, 0%, 100%, 0.1);
+        --almost-transparent: hsla(0, 0%, 100%, 0.15);
+        --box-shadow-transparent: hsla(0, 0%, 100%, 0.11);
+        --almost-black: hsl(0, 0%, 5%);
+        --half-transparent: hsla(0, 0%, 0%, 0.5);
 }
 
 .select-item button:hover {
-        --eerie-black-2: oklch(30.995% 0.00011 271.152);
+        --eerie-black-2: hsl(240, 2%, 20%);
 }
 
 @media (min-width: 1024px) {
         :root {
-                --shadow-1: -4px 8px 24px oklch(0% 0.00011 271.152 / 0.125);
-                --shadow-2: 0 16px 30px oklch(0% 0.00011 271.152 / 0.125);
-                --shadow-3: 0 16px 40px oklch(0% 0.00011 271.152 / 0.125);
+                --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
+                --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
+                --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.125);
         }
 }
