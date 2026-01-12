@@ -832,7 +832,7 @@ a:focus {
 }
 
 .timeline-list .subsubtitle {
-  color: var(--dark-gray);
+  color: var(--subsubtitle-color);
   font-weight: var(--fw-400);
   line-height: 1.6;
 }
