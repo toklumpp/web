@@ -386,7 +386,7 @@ main {
 }
 
 .icon-box ion-icon {
-  color: var(--light-grey);
+  color: var(--icon-color);
 }
 
 .contact-info {
@@ -2084,7 +2084,7 @@ textarea.form-input::-webkit-resizer {
 }
 
 .service-icon {
-  color: var(--light-grey);
+  color: var(--icon-color);
 }
 
 .contact-info {
@@ -2100,7 +2100,7 @@ textarea.form-input::-webkit-resizer {
 }
 
 .no-link {
-  color: var(--light-grey);
+  color: var(--icon-color);
   pointer-events: none;
   cursor: default;
 }
