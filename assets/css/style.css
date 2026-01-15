@@ -395,7 +395,7 @@ main {
 }
 
 .contact-title {
-  color: var(--light-gray-70);
+  color: var(--text-color-70);
   font-size: var(--fs-8);
   text-transform: uppercase;
   margin-bottom: 2px;
@@ -722,7 +722,7 @@ a:focus {
 
 .modal-content time {
   font-size: var(--fs-6);
-  color: var(--light-gray-70);
+  color: var(--text-color-70);
   font-weight: var(--fw-300);
   margin-bottom: 10px;
 }
@@ -1082,7 +1082,7 @@ a:focus {
 }
 
 .project-category {
-  color: var(--light-gray-70);
+  color: var(--text-color-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
@@ -1154,13 +1154,13 @@ a:focus {
 }
 
 .blog-meta :is(.blog-category, time) {
-  color: var(--light-gray-70);
+  color: var(--text-color-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
 
 .blog-meta .dot {
-  background: var(--light-gray-70);
+  background: var(--text-color-70);
   width: 4px;
   height: 4px;
   border-radius: 4px;
@@ -1790,7 +1790,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .filter-item button:hover {
-    color: var(--light-gray-70);
+    color: var(--text-color-70);
   }
 
   .filter-item button.active {
