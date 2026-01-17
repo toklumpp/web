@@ -136,7 +136,7 @@ article {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  color: var(--text-color);
+  color: var(--light-gray);
   box-shadow: var(--shadow-1);
   z-index: 1;
 }
@@ -395,7 +395,7 @@ main {
 }
 
 .contact-title {
-  color: var(--text-color-70);
+  color: var(--light-gray-70);
   font-size: var(--fs-8);
   text-transform: uppercase;
   margin-bottom: 2px;
@@ -478,7 +478,7 @@ a:focus {
 }
 
 .about-text {
-  color: var(--text-color);
+  color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
@@ -546,7 +546,7 @@ a:focus {
 }
 
 .service-item-text {
-  color: var(--text-color);
+  color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
   line-height: 1.6;
@@ -599,7 +599,7 @@ a:focus {
 }
 
 .testimonials-text {
-  color: var(--text-color);
+  color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
@@ -722,13 +722,13 @@ a:focus {
 
 .modal-content time {
   font-size: var(--fs-6);
-  color: var(--text-color-70);
+  color: var(--light-gray-70);
   font-weight: var(--fw-300);
   margin-bottom: 10px;
 }
 
 .modal-content p {
-  color: var(--text-color);
+  color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
@@ -826,7 +826,7 @@ a:focus {
 }
 
 .timeline-list .subtitle {
-  color: var(--text-color);
+  color: var(--light-gray);
   font-weight: var(--fw-400);
   line-height: 1.6;
 }
@@ -860,7 +860,7 @@ a:focus {
 }
 
 .timeline-text {
-  color: var(--text-color);
+  color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
@@ -891,7 +891,7 @@ a:focus {
 }
 
 .skill .title-wrapper data {
-  color: var(--text-color);
+  color: var(--light-gray);
   font-size: var(--fs-7);
   font-weight: var(--fw-300);
 }
@@ -928,7 +928,7 @@ a:focus {
 
 .filter-select {
   background: var(--eerie-black-2);
-  color: var(--text-color);
+  color: var(--light-gray);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -967,7 +967,7 @@ a:focus {
 
 .select-item button {
   background: var(--eerie-black-2);
-  color: var(--text-color);
+  color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   text-transform: capitalize;
@@ -1082,7 +1082,7 @@ a:focus {
 }
 
 .project-category {
-  color: var(--text-color-70);
+  color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
@@ -1154,13 +1154,13 @@ a:focus {
 }
 
 .blog-meta :is(.blog-category, time) {
-  color: var(--text-color-70);
+  color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
 
 .blog-meta .dot {
-  background: var(--text-color-70);
+  background: var(--light-gray-70);
   width: 4px;
   height: 4px;
   border-radius: 4px;
@@ -1177,7 +1177,7 @@ a:focus {
 }
 
 .blog-text {
-  color: var(--text-color);
+  color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
@@ -1784,13 +1784,13 @@ textarea.form-input::-webkit-resizer {
   }
 
   .filter-item button {
-    color: var(--text-color);
+    color: var(--light-gray);
     font-size: var(--fs-5);
     transition: var(--transition-1);
   }
 
   .filter-item button:hover {
-    color: var(--text-color-70);
+    color: var(--light-gray-70);
   }
 
   .filter-item button.active {
