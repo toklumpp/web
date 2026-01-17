@@ -5,7 +5,6 @@ SPDX-License-Identifier: MIT
 :root {
         --blue: oklch(48.245% 0.08047 265.192);
         --white: oklch(100% 0.00011 271.152);
-        --white-smoke: oklch(96.416% 0.00011 271.152);
         --bg-gradient-onyx: linear-gradient(to bottom right,
                         oklch(36.804% 0.00011 271.152) 3%,
                         oklch(30.919% 0.00011 271.152) 97%);
@@ -24,23 +23,11 @@ SPDX-License-Identifier: MIT
         --text-gradient-yellow: linear-gradient(to right,
                         oklch(80% 0.08047 265.192),
                         oklch(70% 0.08047 265.192));
-        --medium-grey: oklch(63.343% 0.00011 271.152);
-        --medium-blue: oklch(63.343% 0.08047 265.192);
 
         --light-blue: oklch(83.269% 0.08047 265.192);
         --icon-color: oklch(82.968% 0.00011 271.152);
         --medium-light-blue: oklch(67.205% 0.08047 265.192);
-        --medium-light-grey: oklch(67.418% 0.00011 271.152);
-        --medium-blue: oklch(54.785% 0.08047 265.192);
-        --medium-grey: oklch(54.785% 0.00009 271.152);
-        --medium-dark-blue: oklch(45.618% 0.08047 265.192);
-        --medium-dark-grey: oklch(45.618% 0.00009 271.152);
-        --dark-blue: oklch(37.98641% 0.08047 265.192);
-        --dark-grey: oklch(37.98641% 0.00009 271.152);
 
-        --tinted-white-smoke: oklch(96.416% 0.08047 265.192);
-        --blue-smoke: oklch(76.713% 0.08047 265.192);
-        --grey-smoke: oklch(76.713% 0.00011 271.152);
         --jet: oklch(34.07% 0.00011 271.152);
         --onyx: oklch(28.946% 0.00011 271.152);
         --onyx-transparent: hsla(240, 1%, 17%, 0.75);
@@ -49,7 +36,6 @@ SPDX-License-Identifier: MIT
         --smoky-black: oklch(18.22% 0.00011 271.152);
         --white-1: oklch(100% 0.00011 271.152);
         --white-2: oklch(96.416% 0.00011 271.152);
-        --orange-yellow-crayola: oklch(90.092% 0.132 91.014);
         --vegas-gold: oklch(76.808% 0.11182 91.198);
         --link-color: var(--medium-light-blue);
         --focus-link-color: var(--light-blue);
