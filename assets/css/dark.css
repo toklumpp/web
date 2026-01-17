@@ -24,9 +24,9 @@ SPDX-License-Identifier: MIT
                         oklch(80% 0.08047 265.192),
                         oklch(70% 0.08047 265.192));
 
-        --light-blue: oklch(83.269% 0.08047 265.192);
+        --light-blue: oklch(80% 0.08047 265.192);
         --icon-color: oklch(82.968% 0.00011 271.152);
-        --medium-light-blue: oklch(67.205% 0.08047 265.192);
+        --medium-light-blue: oklch(70% 0.08047 265.192);
 
         --jet: oklch(34.07% 0.00011 271.152);
         --onyx: oklch(28.946% 0.00011 271.152);
