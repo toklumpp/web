@@ -419,11 +419,12 @@ main {
 }
 
 .social-item a {
+  color: var(--lighter-blue-70);
   font-size: 18px;
 }
 
 a {
-  color: var(--crayola-blue);
+  color: var(--lighter-blue);
 }
 
 a:hover,
@@ -458,6 +459,7 @@ a:focus {
 }
 
 .navbar a {
+  color: var(--lighter-blue);
   font-size: var(--fs-8);
   padding: 20px 7px;
   transition: color var(--transition-1);
