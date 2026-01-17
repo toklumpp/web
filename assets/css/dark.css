@@ -32,15 +32,15 @@ SPDX-License-Identifier: MIT
         --jet: oklch(34.07% 0.00004 265.192);
         --onyx: oklch(28.946% 0.00183 265.192);
         --eerie-black-1: oklch(24.435% 0.00378 265.192);
-                --eerie-black-2: oklch(23.544% 0.00192 265.192);
+        --eerie-black-2: oklch(23.544% 0.00192 265.192);
                 --smoky-black: oklch(18.22% 0.00002 265.192);
                 --white-1: oklch(100% 0.00011 265.192);
                 --white-2: oklch(98.511% 0.00011 265.192);
+        --orange-yellow-crayola: oklch(90.092% 0.00011 265.192);
         --link-color: var(--light-blue);
         --focus-link-color: var(--very-light-blue);
-        --active-link-color: var(--white-1);
         --light-gray: oklch(87.61% 0.0001 265.192);
-                --light-gray-70: oklch(87.61% 0.0001 265.192 / 0.7);
+        --light-gray-70: oklch(87.61% 0.0001 265.192 / 0.7);
         --subsubtitle-color: oklch(60% 0.00011 271.152);
         --bittersweet-shimmer: oklch(55.836% 0.08047 355.192);
         --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);

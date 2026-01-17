@@ -85,12 +85,12 @@ textarea {
 }
 
 ::selection {
-  background: var(--active-link-color);
+  background: var(--orange-yellow-crayola);
   color: var(--smoky-black);
 }
 
 :focus {
-  outline-color: var(--active-link-color);
+  outline-color: var(--orange-yellow-crayola);
 }
 
 html {
@@ -227,7 +227,7 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
-  background: var(--active-link-color);
+  background: var(--orange-yellow-crayola);
   border-radius: 5px;
 }
 
@@ -464,7 +464,7 @@ a:focus {
 }
 
 .navbar a.active {
-  color: var(--active-link-color);
+  color: var(--orange-yellow-crayola);
   pointer-events: none;
   cursor: default;
 }
@@ -1035,7 +1035,7 @@ a:focus {
   --scale: 0.8;
 
   background: var(--jet);
-  color: var(--active-link-color);
+  color: var(--orange-yellow-crayola);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1173,7 +1173,7 @@ a:focus {
 }
 
 .blog-post-item>a:hover .blog-item-title {
-  color: var(--active-link-color);
+  color: var(--orange-yellow-crayola);
 }
 
 .blog-text {
@@ -1242,7 +1242,7 @@ a:focus {
 }
 
 .form-input:focus {
-  border-color: var(--active-link-color);
+  border-color: var(--orange-yellow-crayola);
 }
 
 textarea.form-input {
@@ -1265,7 +1265,7 @@ textarea.form-input::-webkit-resizer {
   position: relative;
   width: 100%;
   background: var(--border-gradient-onyx);
-  color: var(--active-link-color);
+  color: var(--orange-yellow-crayola);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1794,7 +1794,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .filter-item button.active {
-    color: var(--active-link-color);
+    color: var(--orange-yellow-crayola);
   }
 
   /* portfolio and blog grid */
