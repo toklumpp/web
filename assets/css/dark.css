@@ -4,7 +4,7 @@ SPDX-License-Identifier: MIT
 */
 :root {
         --blue: oklch(48.245% 0.08047 265.192);
-        --white: oklch(100% 0.00011 271.152);
+        --white: oklch(100% 0.00011 265.192);
         --light-blue: oklch(70% 0.08047 265.192);
         --very-light-blue: oklch(80% 0.08047 265.192);
         --bg-gradient-onyx: linear-gradient(to bottom right,
@@ -38,7 +38,7 @@ SPDX-License-Identifier: MIT
                 --white-2: oklch(98.511% 0.00011 265.192);
         --link-color: var(--light-blue);
         --focus-link-color: var(--very-light-blue);
-        --active-link-color: var(--white);
+        --active-link-color: var(--white-1);
         --light-gray: oklch(87.61% 0.0001 265.192);
                 --light-gray-70: oklch(87.61% 0.0001 265.192 / 0.7);
         --subsubtitle-color: oklch(60% 0.00011 271.152);
