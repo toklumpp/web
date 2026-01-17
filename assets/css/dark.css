@@ -28,14 +28,14 @@ SPDX-License-Identifier: MIT
 
         --icon-color: oklch(82.968% 0.00011 271.152);
 
-        --jet: oklch(34.07% 0.00011 271.152);
-        --onyx: oklch(28.946% 0.00011 271.152);
         --onyx-transparent: hsla(240, 1%, 17%, 0.75);
-        --eerie-black-1: oklch(24.435% 0.00011 271.152);
-        --eerie-black-2: oklch(23.544% 0.00011 271.152);
-        --smoky-black: oklch(18.22% 0.00011 271.152);
-        --white-1: oklch(100% 0.00011 271.152);
-        --white-2: oklch(96.416% 0.00011 271.152);
+        --jet: oklch(34.07% 0.00004 265.192);
+        --onyx: oklch(28.946% 0.00183 265.192);
+                --eerie-black-1: oklch(24.435% 0.00378 265.192);
+                --eerie-black-2: oklch(23.544% 0.00192 265.192);
+                --smoky-black: oklch(18.22% 0.00002 265.192);
+                --white-1: oklch(100% 0.00011 265.192);
+                --white-2: oklch(98.511% 0.00011 265.192);
         --link-color: var(--light-blue);
         --focus-link-color: var(--very-light-blue);
         --active-link-color: var(--white);
@@ -51,7 +51,7 @@ SPDX-License-Identifier: MIT
         --transparent: hsla(0, 0%, 100%, 0.1);
         --almost-transparent: hsla(0, 0%, 100%, 0.15);
         --box-shadow-transparent: hsla(0, 0%, 100%, 0.11);
-        --almost-black: hsl(0, 0%, 5%);
+        --almost-black: oklch(15.907% 0.00002 265.192);
         --half-transparent: hsla(0, 0%, 0%, 0.5);
 }
 
