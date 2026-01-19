@@ -413,6 +413,9 @@ main {
   color: var(--whitish-blue-2);
 }
 
+.contact-info a.no-link {
+  color: var(--white-2);
+}
 .contact-info :is(time, address) {
   color: var(--white-2);
 }
