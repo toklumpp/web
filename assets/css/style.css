@@ -978,6 +978,10 @@ a:focus {
   border-radius: 8px;
 }
 
+.select-item button:hover {
+  --eerie-black-2: var(--eerie-black-2-alt);
+}
+
 .project-list {
   display: grid;
   grid-template-columns: 1fr;

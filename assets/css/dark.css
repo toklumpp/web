@@ -32,6 +32,7 @@ SPDX-License-Identifier: MIT
         --onyx: oklch(28.946% 0.00183 265.192);
         --eerie-black-1: oklch(24.435% 0.00378 265.192);
         --eerie-black-2: oklch(23.544% 0.00192 265.192);
+        --eerie-black-2-alt: oklch(31.789% 0.00355 265.192);
         --smoky-black: oklch(18.22% 0.00002 265.192);
         --white-1: oklch(100% 0.00011 265.192);
                 --white-2: oklch(98.511% 0.00011 265.192);
@@ -58,9 +59,6 @@ SPDX-License-Identifier: MIT
         --half-transparent: hsla(0, 0%, 0%, 0.5);
 }
 
-.select-item button:hover {
-        --eerie-black-2: hsl(240, 2%, 20%);
-}
 
 @media (min-width: 1024px) {
         :root {
