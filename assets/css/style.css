@@ -401,11 +401,19 @@ main {
   margin-bottom: 2px;
 }
 
-.contact-info :is(a, time) {
+.contact-info :is(a, time, address) {
   font-size: var(--fs-7);
 }
 
-.contact-info time {
+.contact-info address {
+  font-style: normal;
+}
+
+.contact-info a {
+  color: var(--whitish-blue-2);
+}
+
+.contact-info :is(time, address) {
   color: var(--white-2);
 }
 
