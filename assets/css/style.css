@@ -90,7 +90,7 @@ textarea {
 }
 
 :focus {
-  outline-color: var(--orange-yellow-crayola);
+  outline-color: var(--crayola-blue);
 }
 
 html {
@@ -386,7 +386,7 @@ main {
 }
 
 .icon-box ion-icon {
-  color: var(--icon-color);
+  color: var(--orange-yellow-crayola);
 }
 
 .contact-info {
@@ -2100,10 +2100,6 @@ textarea.form-input::-webkit-resizer {
 
 }
 
-.service-icon {
-  color: var(--icon-color);
-}
-
 .contact-info {
   display: inline;
 }
@@ -2117,7 +2113,6 @@ textarea.form-input::-webkit-resizer {
 }
 
 .no-link {
-  color: var(--icon-color);
   pointer-events: none;
   cursor: default;
 }
