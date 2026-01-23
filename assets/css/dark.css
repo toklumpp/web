@@ -5,7 +5,6 @@ SPDX-License-Identifier: MIT
 :root {
         --blue: oklch(48.245% 0.08047 265.192);
         --white: oklch(100% 0.00011 265.192);
-        --very-light-blue: oklch(80% 0.08047 265.192);
         --bg-gradient-onyx: linear-gradient(to bottom right,
                         oklch(36.804% 0.00011 271.152) 3%,
                         oklch(30.919% 0.00011 271.152) 97%);
@@ -22,9 +21,12 @@ SPDX-License-Identifier: MIT
                         oklch(37.15% 0.00011 271.152) 0%,
                         oklch(37.15% 0.00011 271.152 / 0) 50%);
         --text-gradient-yellow: linear-gradient(to right,
-                        oklch(80% 0.08047 265.192),
-                        oklch(70% 0.08047 265.192));
-
+                        oklch(90.092% 0.00011 265.192),
+                                oklch(83.752% 0.00011 265.192));
+                                --text-gradient-blue: linear-gradient(to right,
+                                                oklch(70.744% 0.08047 265.192);
+                                                ,
+                                                oklch(66.883% 0.08047 265.192));
         --onyx-transparent: hsla(240, 1%, 17%, 0.75);
         --jet: oklch(34.07% 0.00004 265.192);
         --onyx: oklch(28.946% 0.00183 265.192);
@@ -37,10 +39,9 @@ SPDX-License-Identifier: MIT
         --orange-yellow-crayola: oklch(90.092% 0.00011 265.192);
         --vegas-gold: oklch(76.808% 0 265.192);
         --crayola-blue: oklch(70.744% 0.08047 265.192);
-        --focus-link-color: var(--very-light-blue);
+        --focus-link-color: oklch(66.883% 0.08047 265.192);
         --lighter-blue: oklch(86.005% 0.08047 265.192);
         --lighter-blue-70: oklch(86.005% 0.08047 265.192 / 0.7);
-                --lighter-link-color: var(--lighter-blue);
         --whitish-blue-2: var(--lighter-blue);
         --light-gray: oklch(87.61% 0.0001 265.192);
         --light-gray-70: oklch(87.61% 0.0001 265.192 / 0.7);
