@@ -434,6 +434,9 @@ main {
   font-size: 18px;
 }
 
+.social-item a:hover {
+  color: var(--lighter-blue);
+}
 a {
   color: var(--lighter-blue);
 }
