@@ -476,6 +476,10 @@ a:focus {
   transition: color var(--transition-1);
 }
 
+.navbar a:hover,
+.navbar a:focus {
+  color: var(--lighter-blue-70);
+}
 .navbar a.active {
   color: var(--orange-yellow-crayola);
   pointer-events: none;
@@ -543,6 +547,7 @@ a:focus {
 }
 
 .service-icon-box {
+  color: var(--orange-yellow-crayola);
   margin-bottom: 10px;
 }
 
