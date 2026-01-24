@@ -28,8 +28,29 @@ function detectPlatform() {
     }
 }
 
+function detectBrowser() {
+    const userAgent = navigator.userAgent;
+    if (userAgent.match(/Seamonkey/i)) {
+        return "Seamonkey";
+    } else if (userAgent.match(/Firefox/i)) {
+        return "Firefox";
+    } else if (userAgent.match(/Edg/i)) {
+        return "Microsoft Edge";
+    } else if (userAgent.match(/Chromium/i)) {
+        return "Chromium";
+    } else if (userAgent.match(/Chrome/i)) {
+        return "Google Chrome";
+    } else if (userAgent.match(/Safari/i)) {
+        return "Safari";
+    } else if (userAgent.match(/Opera/i) || userAgent.match(/OPR/i)) {
+        return "Opera";
+    } else {
+        return "Unknown";
+    }
+}
+
 // Function to replace geo: URLs with platform-specific maps app URLs
-function replaceGeoUrl(match, latitude, longitude, zoom, platform) {
+function replaceGeoUrl(match, latitude, longitude, zoom, platform, browser) {
     let url = match;
     switch (platform) {
         case "iOS":
@@ -41,7 +62,25 @@ function replaceGeoUrl(match, latitude, longitude, zoom, platform) {
             }
             break;
         case "Windows":
-            url = `https://invalid?cp=${latitude},${longitude}`;
+            switch (browser) {
+                case "Microsoft Edge":
+                    url = `https://www.bing.com/maps?cp=${latitude}~${longitude}`;
+                    if (zoom) {
+                        url += `&lvl=${zoom}`;
+                    }
+                    break;
+                case "Firefox":
+                case "Google Chrome":
+                case "Opera":
+                    url = `https://www.google.com/maps/@${latitude},${longitude}`;
+                    if (zoom) {
+                        url += `,${zoom}z`;
+                    }
+                    break;
+                default:
+                    url = `https://invalid?cp=${latitude},${longitude}`;
+
+            }
             break;
         default:
             // Use the geo: URL scheme for Android, ChromeOS, Linux and unknown platforms
@@ -55,6 +94,7 @@ function replaceGeoUrl(match, latitude, longitude, zoom, platform) {
 function geoUrls() {
     // Detect the platform
     const platform = detectPlatform();
+    const browser = detectBrowser();
 
     // Get all links with geo: URLs
     const links = document.querySelectorAll('a[href^="geo:"]');
@@ -63,9 +103,13 @@ function geoUrls() {
     links.forEach(link => {
         const match = link.href.match(geoUrlPattern);
         if (match) {
-            link.href = replaceGeoUrl(link.href, match[1], match[2], match[5], platform);
+            link.href = replaceGeoUrl(link.href, match[1], match[2], match[5], platform, browser);
             if (link.href.match(/invalid/i)) {
                 link.className += " no-link";
+            }
+            if (link.href.match(/http/i)) {
+                link.rel += " noopener";
+                link.target = "_blank";
             }
         }
     });
