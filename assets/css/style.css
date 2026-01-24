@@ -440,7 +440,7 @@ a {
 
 a:hover,
 a:focus {
-  color: var(--focus-link-color);
+  color: var(--lighter-blue-70);
 }
 
 /*-----------------------------------*\
