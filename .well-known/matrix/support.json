@@ -1,0 +1,13 @@
+{
+    "contacts": [
+        {
+            "email_address": "support@toklumpp.net",
+            "matrix_id": "@tobias:toklumpp.net",
+            "role": "m.role.admin"
+        },
+        {
+            "email_address": "security@toklumpp.net",
+            "role": "m.role.security"
+        }
+    ]
+}
