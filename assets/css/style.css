@@ -1855,6 +1855,11 @@ textarea.form-input::-webkit-resizer {
  */
 
 @media (min-width: 1024px) {
+  :root {
+      --shadow-1: var(--shadow-1-alt);
+      --shadow-2: var(--shadow-2-alt);
+      --shadow-3: var(--shadow-3-alt);
+    }
   /**
    * REUSED STYLE
    */

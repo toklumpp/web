@@ -60,12 +60,3 @@ SPDX-License-Identifier: MIT
         --almost-black: oklch(15.907% 0.00002 265.192);
         --half-transparent: oklch(0% 0 0 / 0.5);
 }
-
-
-@media (min-width: 1024px) {
-        :root {
-                --shadow-1: var(--shadow-1-alt);
-                        --shadow-2: var(--shadow-2-alt);
-                        --shadow-3: var(--shadow-3-alt);
-        }
-}
