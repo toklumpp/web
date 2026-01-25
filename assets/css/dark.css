@@ -46,16 +46,16 @@ SPDX-License-Identifier: MIT
         --light-gray-70: oklch(87.61% 0.0001 265.192 / 0.7);
         --subsubtitle-color: oklch(60% 0.00011 271.152);
         --bittersweet-shimmer: oklch(55.836% 0.08047 355.192);
-        --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
-        --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
-        --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
-        --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
-        --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
-        --transparent: hsla(0, 0%, 100%, 0.1);
-        --almost-transparent: hsla(0, 0%, 100%, 0.15);
-        --box-shadow-transparent: hsla(0, 0%, 100%, 0.11);
+        --shadow-1: -4px 8px 24px oklch(0% 0 0 / 0.25);
+                --shadow-2: 0 16px 30px oklch(0% 0 0 / 0.25);
+                --shadow-3: 0 16px 40px oklch(0% 0 0 / 0.25);
+                --shadow-4: 0 25px 50px oklch(0% 0 0 / 0.15);
+                --shadow-5: 0 24px 80px oklch(0% 0 0 / 0.25);
+                --transparent: oklch(100% 0.00011 271.152 / 0.1);
+                --almost-transparent: oklch(100% 0.00011 271.152 / 0.15);
+                --box-shadow-transparent: oklch(100% 0.00011 271.152 / 0.11);
         --almost-black: oklch(15.907% 0.00002 265.192);
-        --half-transparent: hsla(0, 0%, 0%, 0.5);
+        --half-transparent: oklch(0% 0 0 / 0.5);
 }
 
 
