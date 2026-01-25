@@ -51,6 +51,9 @@ SPDX-License-Identifier: MIT
                 --shadow-3: 0 16px 40px oklch(0% 0 0 / 0.25);
                 --shadow-4: 0 25px 50px oklch(0% 0 0 / 0.15);
                 --shadow-5: 0 24px 80px oklch(0% 0 0 / 0.25);
+        --shadow-1-alt: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
+                --shadow-2-alt: 0 16px 30px hsla(0, 7%, 19%, 0.125);
+                --shadow-3-alt: 0 16px 40px hsla(0, 0%, 0%, 0.125);
                 --transparent: oklch(100% 0.00011 271.152 / 0.1);
                 --almost-transparent: oklch(100% 0.00011 271.152 / 0.15);
                 --box-shadow-transparent: oklch(100% 0.00011 271.152 / 0.11);
@@ -61,8 +64,8 @@ SPDX-License-Identifier: MIT
 
 @media (min-width: 1024px) {
         :root {
-                --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
-                --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
-                --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.125);
+                --shadow-1: var(--shadow-1-alt);
+                        --shadow-2: var(--shadow-2-alt);
+                        --shadow-3: var(--shadow-3-alt);
         }
 }
