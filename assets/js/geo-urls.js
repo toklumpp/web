@@ -52,6 +52,7 @@ function detectBrowser() {
 // Function to replace geo: URLs with platform-specific maps app URLs
 function replaceGeoUrl(match, latitude, longitude, zoom, platform, browser) {
     let url = match;
+    let clickable = true;
     switch (platform) {
         case "iOS":
         case "macOS":
@@ -78,8 +79,8 @@ function replaceGeoUrl(match, latitude, longitude, zoom, platform, browser) {
                     }
                     break;
                 default:
-                    url = `https://invalid?cp=${latitude},${longitude}`;
-
+                    url = match;
+                    clickable = false;
             }
             break;
         default:
@@ -88,7 +89,7 @@ function replaceGeoUrl(match, latitude, longitude, zoom, platform, browser) {
             break;
     }
 
-    return url;
+    return { "url": url, "clickable": clickable };
 }
 
 function geoUrls() {
@@ -103,8 +104,9 @@ function geoUrls() {
     links.forEach(link => {
         const match = link.href.match(geoUrlPattern);
         if (match) {
-            link.href = replaceGeoUrl(link.href, match[1], match[2], match[5], platform, browser);
-            if (link.href.match(/invalid/i)) {
+            let result = replaceGeoUrl(link.href, match[1], match[2], match[5], platform, browser);
+            link.href = result.url;
+            if (!result.clickable) {
                 link.className += " no-link";
             }
             if (link.href.match(/http/i)) {
