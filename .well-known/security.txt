@@ -1,0 +1,6 @@
+Canonical: https://www.toklumpp.net/.well-known/security.txt
+
+# Our security address
+Contact: mailto:security@toklumpp.net
+
+Expires: 2027-02-01T00:00:00z
