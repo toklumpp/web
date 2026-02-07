@@ -1,5 +1,7 @@
 RewriteEngine On
 
+RewriteRule ^\.well-known/security\.txt$ \
+  https://www.toklumpp.net/security.txt [R=301,L]
 
 RewriteRule ^\.well-known/openpgpkey(/.*)?$ \
   https://openpgpkey.toklumpp.net/.well-known/openpgpkey/toklumpp.net$1 \
