@@ -1,4 +1,9 @@
 RewriteEngine On
 
+
+RewriteRule ^\.well-known/openpgpkey(/.*)?$ \
+  https://openpgpgkey.toklumpp.net/.well-known/openpgpkey/toklumpp.net$1 \
+  [R=301,L]
+
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
