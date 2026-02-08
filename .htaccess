@@ -14,3 +14,5 @@ RewriteRule ^\.well-known/autoconfig(/.*)?$ \
 
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+Header always set Strict-Transport-Security "max-age=300"
