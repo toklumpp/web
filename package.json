@@ -3,6 +3,7 @@
     "dev": "npx http-serve"
   },
   "dependencies": {
+    "@fontsource/poppins": "^5.2.7",
     "ionicons": "^7.4.0"
   }
 }
