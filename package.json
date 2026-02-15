@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "dev": "npx http-serve"
+  },
   "dependencies": {
     "ionicons": "^7.4.0"
   }
