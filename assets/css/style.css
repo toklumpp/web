@@ -1052,7 +1052,7 @@ a:focus {
   transition: var(--transition-1);
 }
 
-.project-item>a:hover .project-img::before {
+.project-item figure:hover::before {
   background: var(--half-transparent);
 }
 
@@ -1073,7 +1073,7 @@ a:focus {
   transition: var(--transition-1);
 }
 
-.project-item>a:hover .project-item-icon-box {
+.project-item figure:hover .project-item-icon-box {
   --scale: 1;
   opacity: 1;
 }
@@ -1089,7 +1089,7 @@ a:focus {
   transition: var(--transition-1);
 }
 
-.project-item>a:hover img {
+.project-item figure:hover img {
   transform: scale(1.1);
 }
 
