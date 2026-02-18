@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<clientConfig version="1.1">
+    <emailProvider id="toklumpp.de">
+      <domain>toklumpp.de</domain>
+        <displayName>Toklumpp Email</displayName>
+        <displayShortName>Toklumpp</displayShortName>
+        <incomingServer type="imap">
+            <hostname>imap.strato.de</hostname>
+            <port>993</port>
+            <socketType>SSL</socketType>
+            <username>%EMAILADDRESS%</username>
+            <authentication>password-cleartext</authentication>
+        </incomingServer>
+        <incomingServer type="pop3">
+            <hostname>pop3.strato.de</hostname>
+            <port>995</port>
+            <socketType>SSL</socketType>
+            <username>%EMAILADDRESS%</username>
+            <authentication>password-cleartext</authentication>
+        </incomingServer>
+        <outgoingServer type="smtp">
+            <hostname>smtp.strato.de</hostname>
+            <port>465</port>
+            <socketType>SSL</socketType>
+            <username>%EMAILADDRESS%</username>
+            <authentication>password-cleartext</authentication>
+        </outgoingServer>
+    </emailProvider>
+    <webMail>
+        <loginPage url="https://webmail.strato.de/appsuite/" />
+        <loginPageInfo url="https://webmail.strato.de/appsuite/">
+            <username>%EMAILADDRESS%</username>
+            <usernameField id="io-ox-login-username" name="username" />
+            <passwordField id="io-ox-login-password" name="password" />
+        <!-- The submit button to trigger the server submit
+             after filling in the fields.
+             id and name attributes: See <usernameField> -->
+            <loginButton id="io-ox-login-button" name="signin"/>
+        </loginPageInfo>
+    </webMail>
+</clientConfig>

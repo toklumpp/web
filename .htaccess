@@ -12,6 +12,10 @@ RewriteRule ^\.well-known/autoconfig(/.*)?$ \
   https://autoconfig.toklumpp.net$1 \
   [R=301,L]
 
+  RewriteRule ^de/\.well-known/autoconfig(/.*)?$ \
+  https://www.toklumpp.net/de/autoconfig$1 \
+  [R=301,L]
+
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
