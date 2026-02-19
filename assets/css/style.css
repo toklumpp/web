@@ -1056,24 +1056,50 @@ a:focus {
   background: var(--half-transparent);
 }
 
-.project-item-icon-box {
-  --scale: 0.8;
-
+.project-img .project-item-icon-box {
   background: var(--jet);
   color: var(--crayola-blue);
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(var(--scale));
   font-size: 20px;
+  height: 56px;
+    width: 56px;
   padding: 18px;
   border-radius: 12px;
-  opacity: 0;
-  z-index: 1;
   transition: var(--transition-1);
-}
-
-.project-item figure:hover .project-item-icon-box {
+  }
+  
+  .project-img>div {
+    --scale: 0.8;
+    height: 56px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(var(--scale));
+    opacity: 0;
+      z-index: 1
+      }
+      
+      .project-img .project-item-icon-box:hover {
+        color: var(--lighter-blue);
+      }
+      
+      .project-img>div>a {
+        width: 56px;
+        left: 50%;
+      }
+                                                                                                                                                                                                .project-img>div>a:only-of-type {
+                                                                                                                                                                                                  transform: translate(-50%, 0%);
+                                                                                                                                                                                                }
+                                                                                                
+                                                                                                                                                                                                .project-img>div>a:first-of-type:not(:only-of-type) {
+        transform: translate(-112.5%, 0%);
+      }
+                        .project-img>div>a:last-of-type:not(:only-of-type) {
+              transform: translate(12.5%, 0%);
+            }
+      
+            .project-item figure:hover>div {
   --scale: 1;
   opacity: 1;
 }
