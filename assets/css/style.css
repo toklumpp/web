@@ -2134,3 +2134,6 @@ h2 a {
   display: inline-block;
   vertical-align: middle;
 }
+p a {
+  display: inline;
+}
